@@ -4307,7 +4307,7 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+  width: 80%;
 }
 
 .card-img,
@@ -11169,7 +11169,7 @@ header.masthead h1, header.masthead .h1 {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 80%;
+  width: 60%;
 }
 
 .card-img,
@@ -11191,4 +11191,8 @@ header.masthead h1, header.masthead .h1 {
   padding-right: 0.3rem;
   padding-bottom: 0rem;
   margin-bottom: 0rem;
+}
+
+#firstProject {
+  padding-top: 75px;
 }
