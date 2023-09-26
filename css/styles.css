@@ -210,14 +210,14 @@ ul ol {
 /* ______________________________________________________________________________________________________________ SLOGAN STUFF */
 
 #slogan-big {
-  font-size: 90px;
+  font-size: 80px;
   color: white;
   font-family: var(--bs-mooli-font);
   font-weight: bold;
 }
 
 #slogan-small {
-  font-size: 60px;
+  font-size: 55px;
   color: white;
   font-family: var(--bs-mooli-font);
 }
@@ -3643,15 +3643,24 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-.nav-link {
-  display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
-  font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10rem;
+  transition: transform .2s;
 }
+
+.btn-xl:hover {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10rem;
+  transform:scale(1.1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -10871,9 +10880,18 @@ body {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
-  text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  transition: transform .2s;
+}
+
+.btn-xl:hover {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10rem;
+  transform:scale(1.1);
 }
 
 hr.divider {
@@ -10911,6 +10929,7 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #e76524 !important;
 }
+
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
@@ -10926,6 +10945,11 @@ hr.divider-light {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
+  #profileMainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(245, 245, 245, 0.7);
+    padding: 0 1rem;
+  }
+
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
   }
@@ -11159,4 +11183,12 @@ header.masthead h1, header.masthead .h1 {
 .card-img-bottom {
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
+}
+
+.first-letter {
+  font-size: 50px;
+  line-height: 50px;
+  padding-right: 0.3rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
 }
