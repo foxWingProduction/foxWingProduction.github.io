@@ -10936,6 +10936,7 @@ hr.divider-light {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #e76524 !important;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
