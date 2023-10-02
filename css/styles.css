@@ -248,6 +248,10 @@ small, .small {
   font-size: 1.0em;
 }
 
+smaller, .smaller {
+  font-size: 0.9em;
+}
+
 mark, .mark {
   padding: 0.1875em;
   background-color: var(--bs-highlight-bg);
@@ -7304,6 +7308,10 @@ textarea.form-control-lg {
 
 .w-100 {
   width: 100% !important;
+}
+
+.w-120 {
+  width: 120% !important;
 }
 
 .w-auto {
