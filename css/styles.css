@@ -11061,6 +11061,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #hoveringProfile:hover {
+  --bs-bg-opacity: 0;
   background: rgba(231, 101, 36, 0.9);
   transform:scale(1.1);
 }
