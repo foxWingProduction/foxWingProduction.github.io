@@ -1,502 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Projects - FoxWing Productions</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-        <!-- Font Awesome icons (free version) testing changes on main-->
-        
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@250&display=swap" rel="stylesheet">
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="../css/styles.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Films — FoxWing Productions</title>
+    <meta name="description" content="The films of FoxWing Productions — DELIVERY, I'm Only Visiting, Daddy-O, Tarantino, First Fan, Ava and Rooted Remedy. Award-driven cinema produced in Toronto." />
+    <meta name="theme-color" content="#050505" />
+    <link rel="canonical" href="https://foxwingproductions.com/projects/" />
 
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-2" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="../" id="mainLogo"><img src="../assets/img/textFoxLogo.png" width="200"></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link text-primary" href="#page-top">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link text-muted" href="../#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link text-muted" href="../#portfolio">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link text-muted" href="../#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link text-muted" href="../#contact">Contact</a></li>
-                    </ul>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="../css/cinematic.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <header class="nav scrolled" id="mainNav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="../" aria-label="FoxWing Productions home">
+                <img src="../assets/img/textLogo.png" alt="FoxWing Productions" />
+            </a>
+            <nav class="nav__links" aria-label="Primary">
+                <a class="nav__link active" href="../projects">Films</a>
+                <a class="nav__link" href="../#services">Services</a>
+                <a class="nav__link" href="../#gallery">Gallery</a>
+                <a class="nav__link" href="../#team">Team</a>
+                <a class="btn nav__cta" href="../#contact">Get in touch</a>
+            </nav>
+            <button class="nav__toggle" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+    <div class="nav__overlay" id="mobileMenu">
+        <a href="../projects"><span class="idx">01</span>Films</a>
+        <a href="../#services"><span class="idx">02</span>Services</a>
+        <a href="../#gallery"><span class="idx">03</span>Gallery</a>
+        <a href="../#team"><span class="idx">04</span>Team</a>
+        <a href="../#contact"><span class="idx">05</span>Contact</a>
+    </div>
+
+    <!-- Sub-hero -->
+    <section class="subhero">
+        <div class="container subhero__inner">
+            <p class="eyebrow reveal in">Selected work · 2023 — 2024</p>
+            <h1 class="subhero__title reveal in">The <em class="gold-text">FoxWing</em><br>filmography.</h1>
+            <p class="subhero__sub reveal in">Seven productions across action, thriller, mystery, horror, drama and music video — each carried from first myth to final picture.</p>
+
+            <div class="filters reveal in" role="tablist" aria-label="Filter films by genre">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="drama">Drama</button>
+                <button class="filter" data-filter="thriller">Thriller</button>
+                <button class="filter" data-filter="mystery">Mystery</button>
+                <button class="filter" data-filter="horror">Horror</button>
+                <button class="filter" data-filter="action">Action</button>
+                <button class="filter" data-filter="music">Music Video</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <div class="projects-list">
+
+        <!-- DELIVERY -->
+        <article class="project" id="project1" data-genres="action thriller">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project1/delivery1.png" alt="DELIVERY — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery2.png" alt="DELIVERY — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery3.png" alt="DELIVERY — still 3" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery4.png" alt="DELIVERY — still 4" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
+                    <button aria-label="Slide 4"></button>
                 </div>
             </div>
-        </nav>
-        <!-- Project 1-->
-        <section class="page-section py-5" id="project1">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6" id="firstProject"><!-- <img class="card-img-top mb-5 mb-md-0" id="firstProject" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /> -->
-                    <!-- https://mdbcdn.b-cdn.net/img/new/slides/041.web -->
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2023 · Action · Thriller</div>
+                <h2 class="project__name">DELIVERY</h2>
+                <p class="project__synopsis">Kosta, a low-level conman disguised as a late-night delivery driver, gets unwittingly caught up in an underground opioid ring operated by the Chinese mafia in Toronto.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Directors</dt><dd>Jaiden Reese · The97</dd></div>
+                    <div class="credit"><dt>Directors of Photography</dt><dd>Cale Fara-on · Michael Cao</dd></div>
+                    <div class="credit"><dt>Producers</dt><dd>Jaiden Reese · 97Collective · Rosa Riad · Aleksandra Filatova · Jonathan Behr</dd></div>
+                    <div class="credit"><dt>Production Companies</dt><dd>Northern Touch · FoxWing Productions Inc.</dd></div>
+                    <div class="credit"><dt>Written by</dt><dd>Jaiden Reese</dd></div>
+                    <div class="credit"><dt>Starring</dt><dd>Kosta Atha (Driver) · Nelson Cheng (Tong) · Timothy Mak (Hao)</dd></div>
+                </dl>
+            </div>
+        </article>
 
-                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators1">
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project1/delivery1.png" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project1/delivery2.png" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project1/delivery3.png" alt="Third slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project1/delivery4.png" alt="Fourth slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="small mb-1" id="firstProject">
-                            <span>&middot; 2023 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-primary">DELIVERY</h1>
-                        <hr class="divider divider-primary" />
-                        <div class="smaller mb-5">
-                            <span class="fw-bold">Directors: </span><span">Jaiden Reese &middot; The97</span><br>
-                            <span class="fw-bold">Directors of Photography: </span><span>Cale Fara-on &middot; Michael Cao</span><br>
-                            <span class="fw-bold">Producers: </span><span>Jaiden Reese &middot; 97Collective &middot; Rosa Riad &middot; Aleksandra Filatova &middot; Jonathan Behr</span><br>
-                            <span class="fw-bold">Production Companies: </span><span>Northern Touch &middot; FoxWing Productions Inc.</span><br>
-                            <span class="fw-bold">Written by: </span><span>Jaiden Reese</span><br>
-                            <span class="fw-bold">Starring: </span><span>Kosta Atha (Driver) &middot; Nelson Cheng (Tong) &middot; Timothy Mak (Hao) </span><br>
-                            <span class="fw-bold">Genres: </span><span>Action &middot; Thriller  </span><br>
-
-                        </div>
-                        <hr class="divider divider-primary" />
-                        <p class="lead">Kosta, a low level conman disguised as a late night delivery driver gets unwittingly caught up in an underground opioid ring operated by the Chinese mafia in Toronto.</p>
-                        <div class="d-flex">
-                        </div>
-                    </div>
+        <!-- I'm Only Visiting -->
+        <article class="project" id="project2" data-genres="mystery thriller">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project2/visiting1.jpg" alt="I'm Only Visiting — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project2/visiting2.jpg" alt="I'm Only Visiting — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project2/visiting3.jpg" alt="I'm Only Visiting — still 3" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
                 </div>
             </div>
-        </section>
-        <!-- Project 2 -->
-        <section class="page-section bg-primary py-5" id="project2">
-             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6">
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2023 · Mystery · Thriller</div>
+                <h2 class="project__name">I'm Only Visiting</h2>
+                <p class="project__synopsis">A young detective pursues a serial killer using a device that allows him to experience the last two minutes of the victim's life, while also struggling to bury a traumatic past, and keeping his addiction at bay.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Director</dt><dd>Ryan Bellaire</dd></div>
+                    <div class="credit"><dt>Director of Photography</dt><dd>Mark Ballentyne</dd></div>
+                    <div class="credit"><dt>Producers</dt><dd>Rosa Riad · Aleksandra Filatova</dd></div>
+                    <div class="credit"><dt>Production Company</dt><dd>FoxWing Productions Inc.</dd></div>
+                    <div class="credit"><dt>Written by</dt><dd>Mark Ballentyne</dd></div>
+                    <div class="credit"><dt>Starring</dt><dd>Adrian Alexie Edwards (Will) · Hugh Meechan (Officer Richards) · Chai Valladares (Bag Killer) · Jayna Shi (Ashley) · Emily Duckett (Emma) · Rachel Hart (Pill Analyst)</dd></div>
+                </dl>
+            </div>
+        </article>
 
-                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators2">
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project2/visiting1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project2/visiting2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project2/visiting3.jpg" alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="small mb-1 text-white" id="isAProject">
-                            <span>&middot; 2023 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-dark">I'm Only Visiting</h1>
-                        <hr class="divider divider-dark" />
-                        <div class="smaller mb-5 text-white">
-                            <span class="fw-bold">Director: </span><span">Ryan Bellaire</span><br>
-                            <span class="fw-bold">Director of Photography: </span><span>Mark Ballentyne</span><br>
-                            <span class="fw-bold">Producers: </span><span>Rosa Riad &middot; Aleksandra Filatova </span><br>
-                            <span class="fw-bold">Production Company: </span><span> FoxWing Productions Inc.</span><br>
-                            <span class="fw-bold">Written by: </span><span>Mark Ballentyne </span><br>
-                            <span class="fw-bold">Starring: </span><span>Adrian Alexie Edwards (Will) &middot; Hugh Meechan (Officer Richards) &middot; Chai Valladares (Bag Killer) &middot; 
-                                                                        Jayna Shi (Ashley) &middot; Emily Duckett (Emma) &middot; Rachel Hart (Pill Analyst)</span><br>
-                            <span class="fw-bold">Genres: </span><span>Mystery &middot; Thriller  </span><br>
-                        </div>
-                        <hr class="divider divider-dark" />
-                        <p class="lead text-white">A young detective pursues a serial killer using a device that allows him to experience the last two minutes of the victim's life, while also struggling to bury a traumatic past, and keeping his addiction at bay.</p>
-                        <div class="d-flex">
-                        </div>
-                    </div>
+        <!-- Daddy-O -->
+        <article class="project" id="project3" data-genres="horror">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project3/image1.png" alt="Daddy-O — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project3/image2.png" alt="Daddy-O — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project3/image3.png" alt="Daddy-O — still 3" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project3/image4.png" alt="Daddy-O — still 4" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
+                    <button aria-label="Slide 4"></button>
                 </div>
             </div>
-        </section>
-        <!-- Project 3 -->
-        <section class="page-section bg-dark py-5" id="project3">
-             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6">
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2023 · Horror</div>
+                <h2 class="project__name">Daddy-O</h2>
+                <p class="project__synopsis">At a prestigious art auction, renowned artist Kai Lee is confronted by two women, Rachel and Jo'Elle, each claiming to be his daughter. Amidst mounting tension, Kai evaluates their art to establish his true heir. He unexpectedly declares both as family, inciting a heated dispute between Rachel and Jo'Elle.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Director</dt><dd>Conor Forrest</dd></div>
+                    <div class="credit"><dt>Producers</dt><dd>Rosa Riad · Aleksandra Filatova</dd></div>
+                    <div class="credit"><dt>Production Company</dt><dd>FoxWing Productions Inc.</dd></div>
+                    <div class="credit"><dt>Cinematographer</dt><dd>Hayden Salter</dd></div>
+                    <div class="credit"><dt>Written by</dt><dd>Darcy Smith · Michelle Owusu</dd></div>
+                    <div class="credit"><dt>Assistant Director</dt><dd>Teodora Vilotijević</dd></div>
+                    <div class="credit"><dt>Starring</dt><dd>Hannah Gordon · Ryan Bannon · Britney Tavares · Zaarin Bushra · Darcy Smith</dd></div>
+                </dl>
+            </div>
+        </article>
 
-                        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators2">
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project3/image1.png" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project3/image2.png" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project3/image3.png" alt="Third slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project3/image4.png" alt="Fourth slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6">
-                        <div class="small mb-1 text-white" id="isAProject">
-                            <span>&middot; 2023 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-primary">Daddy-O</h1>
-                        <hr class="divider divider-primary" />
-                        <div class="smaller mb-5 text-white">
-                            <span class="fw-bold">Director: </span><span">Conor Forrest</span><br>
-                            <span class="fw-bold">Producers: </span><span>Rosa Riad &middot; Aleksandra Filatova </span><br>
-                            <span class="fw-bold">Production Company: </span><span> FoxWing Productions Inc.</span><br>
-                            <span class="fw-bold">Cinematographer: </span><span"> Hayden Salter </span><br>
-                            <span class="fw-bold">Written by: </span><span>Darcy Smith &middot; Michelle Owusu </span><br>
-                            <span class="fw-bold">Assistant Director: </span><span>Teodora Vilotijević </span><br>
-                            <span class="fw-bold">Starring: </span><span>Hannah Gordon  &middot; Ryan Bannon  &middot; Britney Tavares  &middot; Zaarin Bushra  &middot; Darcy Smith</span><br>
-                            <span class="fw-bold">Genres: </span><span>Horror  </span><br>
-                        </div>
-                        <hr class="divider divider-primary" />
-                        <p class="lead text-white">At a prestigious art auction, renowned artist Kai Lee is confronted by two women, Rachel and Jo'Elle, each claiming to be his daughter. Amidst mounting tension, Kai evaluates their art to establish his true heir. He unexpectedly declares both as family, inciting a heated dispute between Rachel and Jo'Elle.</p>
-                        <div class="d-flex">
-                        </div>
-                    </div>
+        <!-- Tarantino -->
+        <article class="project" id="project4" data-genres="music">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project4/tarantino1.jpg" alt="Tarantino — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino2.jpg" alt="Tarantino — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino3.jpg" alt="Tarantino — still 3" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino4.jpg" alt="Tarantino — still 4" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
+                    <button aria-label="Slide 4"></button>
                 </div>
             </div>
-        </section>
-         <!-- Project 4-->
-        <section class="page-section py-5" id="project4">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6" id="fourthProject"><!-- <img class="card-img-top mb-5 mb-md-0" id="firstProject" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /> -->
-                    <!-- https://mdbcdn.b-cdn.net/img/new/slides/041.web -->
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2023 · Music Video</div>
+                <h2 class="project__name">Tarantino</h2>
+                <p class="project__synopsis">Adam Rodway's music video for his debut single.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Director</dt><dd>King Dawit</dd></div>
+                    <div class="credit"><dt>Producers</dt><dd>Rosa Riad · Aleksandra Filatova</dd></div>
+                    <div class="credit"><dt>Production Company</dt><dd>FoxWing Productions Inc.</dd></div>
+                    <div class="credit"><dt>Artist</dt><dd>Adam Rodway</dd></div>
+                    <div class="credit"><dt>Cinematographer</dt><dd>Jason D'Souza</dd></div>
+                </dl>
+            </div>
+        </article>
 
-                        <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators1">
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project4/tarantino1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project4/tarantino2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project4/tarantino3.jpg" alt="Third slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project4/tarantino4.jpg" alt="Fourth slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="small mb-1" id="firstProject">
-                            <span>&middot; 2023 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-primary">Tarantino</h1>
-                        <hr class="divider divider-primary" />
-                        <div class="smaller mb-5">
-                            <span class="fw-bold">Director: </span><span">King Dawit</span><br>
-                            <span class="fw-bold">Producers: </span><span>Rosa Riad &middot; Aleksandra Filatova</span><br>
-                            <span class="fw-bold">Production Company: </span><span>FoxWing Productions Inc.</span><br>
-                            <span class="fw-bold">Artist: </span><span>Adam Rodway</span><br>
-                            <span class="fw-bold">Cinematographer: </span><span>Jason D'Souza</span><br>
-                            <span class="fw-bold">Genres: </span><span>Music Video</span><br>
-
-                        </div>
-                        <hr class="divider divider-primary" />
-                        <p class="lead">Adam Rodway's music video for his debut single.</p>
-                        <div class="d-flex">
-                        </div>
-                    </div>
+        <!-- First Fan -->
+        <article class="project" id="project5" data-genres="drama">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project5/picture1.jpg" alt="First Fan — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project5/picture2.jpg" alt="First Fan — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project5/picture3.jpg" alt="First Fan — still 3" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
                 </div>
             </div>
-        </section>
-        <!-- Project 2 -->
-        <section class="page-section bg-primary py-5" id="project5">
-             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6">
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2023 · Drama</div>
+                <h2 class="project__name">First Fan</h2>
+                <p class="project__synopsis">A young woman lies to her mother about where she is going.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Director / Writer</dt><dd>Carly Balestreri</dd></div>
+                    <div class="credit"><dt>Producer</dt><dd>Celina Bradley</dd></div>
+                    <div class="credit"><dt>Cinematographer</dt><dd>Rosa Riad</dd></div>
+                    <div class="credit"><dt>Production Company</dt><dd>FoxWing Productions Inc.</dd></div>
+                    <div class="credit"><dt>Starring</dt><dd>Alex Floras Matic · Chantel Mendrela Peredes</dd></div>
+                </dl>
+            </div>
+        </article>
 
-                        <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators2">
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project5/picture1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project5/picture2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project5/picture3.jpg" alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+        <!-- Ava -->
+        <article class="project" id="project6" data-genres="drama">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project6/picture1.jpg" alt="Ava — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project6/picture2.jpg" alt="Ava — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project6/picture3.jpg" alt="Ava — still 3" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
+                </div>
+            </div>
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2024 · Drama</div>
+                <h2 class="project__name">Ava</h2>
+                <p class="project__synopsis">Four friends re-unite at the memorial of their high school teacher; long-forgotten secrets are revealed in a desperate fight for the truth.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Directors</dt><dd>Teodora Vilotijević · Lucas DaSilva</dd></div>
+                    <div class="credit"><dt>Producers</dt><dd>Rosa Riad · Aleksandra Filatova</dd></div>
+                    <div class="credit"><dt>Cinematographer</dt><dd>Mateen Missaghi</dd></div>
+                    <div class="credit"><dt>Production Companies</dt><dd>FoxWing Productions Inc. · 746 Productions</dd></div>
+                    <div class="credit"><dt>Starring</dt><dd>Lucas DaSilva · Heather Brownlee · Michael Ruhs · Sydney Banton · Darcy Smith</dd></div>
+                </dl>
+            </div>
+        </article>
 
+        <!-- Rooted Remedy -->
+        <article class="project" id="project7" data-genres="drama">
+            <div class="project__media">
+                <div class="project__slides">
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project7/picture1.jpg" alt="Rooted Remedy — still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project7/picture2.jpg" alt="Rooted Remedy — still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project7/picture3.jpg" alt="Rooted Remedy — still 3" /></div>
+                </div>
+                <div class="project__dots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
+                </div>
+            </div>
+            <div class="project__body">
+                <div class="project__yearline"><span class="sep"></span>2024 · Drama</div>
+                <h2 class="project__name">Rooted Remedy</h2>
+                <p class="project__synopsis">A young couple has to find a way out of the problems they've buried.</p>
+                <dl class="project__credits">
+                    <div class="credit"><dt>Director / Writer</dt><dd>Aleksandra Filatova</dd></div>
+                    <div class="credit"><dt>Producer</dt><dd>Rosa Riad</dd></div>
+                    <div class="credit"><dt>Production Company</dt><dd>FoxWing Productions Inc.</dd></div>
+                    <div class="credit"><dt>Cinematographer</dt><dd>Roham Abtahi</dd></div>
+                    <div class="credit"><dt>Starring</dt><dd>Christina Woolf · Will P.-Amaral</dd></div>
+                </dl>
+            </div>
+        </article>
+    </div>
+
+    <!-- Coming soon -->
+    <section class="section--tight section" style="text-align:center; border-top:1px solid var(--line);">
+        <div class="container">
+            <p class="eyebrow centered reveal">Now in development</p>
+            <h2 class="section-title reveal" data-delay="1" style="max-width:18ch;margin-inline:auto;">More cinematic wonders to be <em>unleashed soon</em>.</h2>
+            <div class="reveal" data-delay="2" style="margin-top:2.5rem;">
+                <a class="btn" href="../#contact">Work with us
+                    <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="../assets/img/textLogo.png" alt="FoxWing Productions" />
+                    <p class="footer__tag">Myth to picture — <em>unleashing cinematic wonders</em>.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h5>Explore</h5>
+                        <a href="../#about">About</a>
+                        <a href="../#services">Services</a>
+                        <a href="../projects">Films</a>
+                        <a href="../#team">Team</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="small mb-1 text-white" id="isAProject">
-                            <span>&middot; 2023 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-dark">First Fan</h1>
-                        <hr class="divider divider-dark" />
-                        <div class="smaller mb-5 text-white">
-                            <span class="fw-bold">Director/Writer: </span><span">Carly Balestreri</span><br>
-                            <span class="fw-bold">Producer: </span><span>Celina Bradley</span><br>
-                            <span class="fw-bold">Cinematographer: </span><span>Rosa Riad</span><br>
-                            <span class="fw-bold">Production Company: </span><span> FoxWing Productions Inc.</span><br>
-                            <span class="fw-bold">Starring: </span><span>Alex Floras Matic &middot; Chantel Mendrela Peredes</span><br>
-                            <span class="fw-bold">Genres: </span><span>Drama</span><br>
-                        </div>
-                        <hr class="divider divider-dark" />
-                        <p class="lead text-white">A young woman lies to her mother about where she is going.</p>
-                        <div class="d-flex">
-                        </div>
+                    <div class="footer__col">
+                        <h5>Connect</h5>
+                        <a href="mailto:contact@foxwingproductions.com">Email</a>
+                        <a href="https://www.instagram.com/foxwingproductions/">Instagram</a>
+                        <a href="../#contact">Contact</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Project 6 -->
-        <section class="page-section bg-dark py-5" id="project6">
-             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6">
-
-                        <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators2">
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project6/picture1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project6/picture2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project6/picture3.jpg" alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6">
-                        <div class="small mb-1 text-white" id="isAProject">
-                            <span>&middot; 2024 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-primary">Ava</h1>
-                        <hr class="divider divider-primary" />
-                        <div class="smaller mb-5 text-white">
-                            <span class="fw-bold">Directors: </span><span">Teodora Vilotijević &middot; Lucas DaSilva</span><br>
-                            <span class="fw-bold">Producers: </span><span>Rosa Riad &middot; Aleksandra Filatova</span><br>
-                            <span class="fw-bold">Cinematographer: </span><span"> Mateen Missaghi </span><br>
-                            <span class="fw-bold">Production Company: </span><span> FoxWing Productions Inc. &middot; 746 Productions</span><br>
-                            <span class="fw-bold">Starring: </span><span>Lucas DaSilva  &middot; Heather Brownlee  &middot; Michael Ruhs  &middot; Sydney Banton  &middot; Darcy Smith</span><br>
-                            <span class="fw-bold">Genres: </span><span>Drama  </span><br>
-                        </div>
-                        <hr class="divider divider-primary" />
-                        <p class="lead text-white">Four friends re-unite at the memorial of their high school teacher, long-forgotten secrets are revealed in a desperate fight for the truth.</p>
-                        <div class="d-flex">
-                        </div>
-                    </div>
-                </div>
+            <div class="footer__bottom">
+                <span>© <span data-year>2024</span> FoxWing Productions. All rights reserved.</span>
+                <span>Toronto, Canada</span>
             </div>
-        </section>
-         <!-- Project 7-->
-        <section class="page-section py-5" id="project7">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <!-- PHOTO CAROUSEL -->
-                    <div class="col-md-6" id="seventhProject"><!-- <img class="card-img-top mb-5 mb-md-0" id="firstProject" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /> -->
-                    <!-- https://mdbcdn.b-cdn.net/img/new/slides/041.web -->
+        </div>
+    </footer>
 
-                        <div id="carouselExampleIndicators7" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <ol class="carousel-indicators1">
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-                            </ol> -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="../assets/img/projects/project7/picture1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project7/picture2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../assets/img/projects/project7/picture3.jpg" alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="small mb-1" id="firstProject">
-                            <span>&middot; 2024 &middot;</span><br>
-                        </div>
-                        <h1 class="display-5 fw-bold text-primary">Rooted Remedy</h1>
-                        <hr class="divider divider-primary" />
-                        <div class="smaller mb-5">
-                            <span class="fw-bold">Director/Writer: </span><span">Aleksandra Filatova</span><br>
-                            <span class="fw-bold">Producers: </span><span>Rosa Riad</span><br>
-                            <span class="fw-bold">Production Company: </span><span>FoxWing Productions Inc.</span><br>
-                            <span class="fw-bold">Cinematographer: </span><span>Roham Abtahi</span><br>
-                            <span class="fw-bold">Starring: </span><span>Christina Woolf &middot; Will P.-Amaral</span><br>
-                            <span class="fw-bold">Genres: </span><span>Drama</span><br>
-
-                        </div>
-                        <hr class="divider divider-primary" />
-                        <p class="lead">A young couple has to find away out of the problems they’ve buried.</p>
-                        <div class="d-flex">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- More Section-->
-        <section class="page-section bg-primary" id="More">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">More Cinematic Wonders to be Unleashed Soon...<br><br></h2>
-                        
-                        <!-- <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p> -->
-                        <!-- <a class="btn btn-light btn-xl" href="../projects/index.html">Our Projects</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-dark py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-white">2023 - FoxWing Productions</div></div>
-        </footer>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../js/scripts.js"></script>
-        <!-- Bootstrap core JS-->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
-        <!-- Boostrap Carousel -->
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script> 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script> -->
-
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-    </body>
+    <script src="../js/cinematic.js"></script>
+</body>
 </html>

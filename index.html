@@ -1,344 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>FoxWing Productions</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@250&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Mooli:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Caveat:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Kalam:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top" id="mainLogo"><img src="assets/img/textFoxLogo.png" width="200"></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="aleksandraFilatova.html">Aleks</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rosaRiad.html">Rosa</a></li> -->
-                    </ul>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FoxWing Productions — Toronto Film Production Company</title>
+    <meta name="description" content="FoxWing Productions is a Toronto-based film production company. Myth to picture — unleashing cinematic wonders across drama, thriller, horror and more. Full-service production: locations, casting, crew, equipment and management." />
+    <meta name="author" content="FoxWing Productions" />
+    <meta name="theme-color" content="#050505" />
+    <link rel="canonical" href="https://foxwingproductions.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FoxWing Productions" />
+    <meta property="og:title" content="FoxWing Productions — Myth to Picture" />
+    <meta property="og:description" content="A Toronto-based film production company turning bold stories into cinema." />
+    <meta property="og:image" content="assets/img/bg-masthead.jpg" />
+    <meta property="og:url" content="https://foxwingproductions.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link href="css/cinematic.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FoxWing Productions",
+      "url": "https://foxwingproductions.com/",
+      "logo": "https://foxwingproductions.com/assets/img/textFoxLogo.png",
+      "description": "Toronto-based film production company.",
+      "email": "contact@foxwingproductions.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+      "sameAs": ["https://www.instagram.com/foxwingproductions/"]
+    }
+    </script>
+</head>
+<body id="page-top">
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ===================== Navigation ===================== -->
+    <header class="nav" id="mainNav">
+        <div class="nav__inner">
+            <a class="nav__brand nav__brand--emblem" href="#page-top" aria-label="FoxWing Productions home">
+                <img src="assets/Newfoxlogo-transparent.png" alt="FoxWing Productions" />
+            </a>
+            <nav class="nav__links" aria-label="Primary">
+                <a class="nav__link" data-section="about" href="#about">About</a>
+                <a class="nav__link" data-section="services" href="#services">Services</a>
+                <a class="nav__link" data-section="work" href="#work">Films</a>
+                <a class="nav__link" data-section="gallery" href="#gallery">Gallery</a>
+                <a class="nav__link" data-section="team" href="#team">Team</a>
+                <a class="btn nav__cta" href="#contact">Get in touch</a>
+            </nav>
+            <button class="nav__toggle" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile overlay -->
+    <div class="nav__overlay" id="mobileMenu">
+        <a href="#about"><span class="idx">01</span>About</a>
+        <a href="#services"><span class="idx">02</span>Services</a>
+        <a href="#work"><span class="idx">03</span>Films</a>
+        <a href="#gallery"><span class="idx">04</span>Gallery</a>
+        <a href="#team"><span class="idx">05</span>Team</a>
+        <a href="#contact"><span class="idx">06</span>Contact</a>
+    </div>
+
+    <!-- ===================== Hero ===================== -->
+    <section class="hero hero--center" id="top">
+        <div class="hero__bg">
+            <div class="hero__slide is-active"><img src="assets/img/hero/hero-1-forest-road.jpg" alt="A forest road pierced by a dramatic beam of light" fetchpriority="high" /></div>
+            <div class="hero__slide"><img src="assets/img/hero/hero-2-canyon-van.jpg" alt="A vintage van on a desert road winding through red-rock canyons" /></div>
+            <div class="hero__slide"><img src="assets/img/hero/hero-3-la-skyline.jpg" alt="A glittering city skyline at blue hour" /></div>
+            <div class="hero__slide"><img src="assets/img/hero/hero-4-tokyo-neon.jpg" alt="A neon-lit city at night seen from above" /></div>
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <div class="hero__inner">
+            <h1 class="hero__title hero__title--brand">
+                <span class="line"><span>FoxWing</span></span>
+                <span class="line"><span>Productions</span></span>
+            </h1>
+            <div class="hero__meta">
+                <a class="btn btn--solid" href="#work">
+                    <svg class="play" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    Watch Showreel
+                </a>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-12 align-self-end">
-                        <h1 id="slogan-big">Myth to Picture: </h1> <h2 id="slogan-small">Unleashing Cinematic Wonders</h2>
-                        <!-- <hr class="divider" /> -->
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <!-- <h2 class="text-white mt-0">Myth to Pictures: Unleashing Cinematic Wonders</h2> -->
-                    </div>
+        </div>
+
+        <a class="hero__scroll" href="#about" aria-label="Scroll to explore">Scroll<span class="bar"></span></a>
+    </section>
+
+    <!-- ===================== Stats ===================== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat reveal">
+                    <div class="stat__num"><span data-count="7" data-pad="true">07</span></div>
+                    <div class="stat__label">Films Produced</div>
                 </div>
-            </div>
-        </header>
-        <!-- Projects --> 
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Toronto-Based Film Production Company<br><br></h2>
-                        
-                        <!-- <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p> -->
-                        <a class="btn btn-light btn-xl h1" href="projects" id="hoveringIcon">Explore Our Projects</a>
-                        </div>
-                    </div>
+                <div class="stat reveal" data-delay="1">
+                    <div class="stat__num"><span data-count="6" data-pad="true">06</span></div>
+                    <div class="stat__label">Genres Spanned</div>
                 </div>
-            </div>
-        </section>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Our Services</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-geo-alt fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Location Services & Permits</h3>
-                            <p class="text-dark mb-0" id="services">Finding suitable filming locations, obtaining necessary permits, and ensuring legal compliance to shoot at those locations.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-calendar-week fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Budget & Scheduling</h3>
-                            <p class="text-dark mb-0" id="services">Developing a comprehensive budget that outlines expenses and revenue sources for the film. Creating a production schedule that outlines when and where each scene will be shot.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-diagram-3 fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Production Management</h3>
-                            <p class="text-dark mb-0" id="services">Overseeing the day-to-day operations of the film production, including managing the crew, coordinating activities, and problem-solving.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-film fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Film-Related Research</h3>
-                            <p class="text-dark mb-0" id="services">Conducting research related to the film's subject matter, historical context, or any other elements that require in-depth knowledge for an accurate portrayal.</p>
-                        </div>
-                    </div>
+                <div class="stat reveal" data-delay="2">
+                    <div class="stat__num"><span data-count="50">0</span><span class="suffix">+</span></div>
+                    <div class="stat__label">Cast &amp; Crew</div>
                 </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-person-video3 fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Casting</h3>
-                            <p class="text-dark mb-0" id="services">Holding auditions, selecting actors for roles, and negotiating contracts with them.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-people fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Crew Hiring</h3>
-                            <p class="text-dark mb-0" id="services">Hiring and managing the various crew members necessary for a film production, including the director of photography, sound engineer, production designer, etc.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-truck fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Transport & Logistical Services</h3>
-                            <p class="text-dark mb-0" id="services">Arranging transportation for crew and equipment to and from filming locations. Managing logistics such as catering, accommodation, and scheduling.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-camera-reels fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2 fw-bold">Equipment Rental</h3>
-                            <p class="text-dark mb-0" id="services">Procuring and renting the necessary filming equipment, such as cameras, lighting, sound equipment, and props.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                   
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/24.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/24.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                               
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/15.png">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/15.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                             
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/14.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/14.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/22.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/22.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                               
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/23.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/23.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                             
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                            
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/12.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                               
-                            </div>
-                        </a>
-                    </div>
+                <div class="stat reveal" data-delay="3">
+                    <div class="stat__num"><span data-count="8" data-pad="true">08</span></div>
+                    <div class="stat__label">Production Services</div>
                 </div>
             </div>
         </div>
-        <!-- Team-->
-        <section class="page-section bg-dark text-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading">Our Team</h2>
-                    <hr class="divider divider-light" />
-                    <p class="text-muted mb-5"> </p>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__media reveal">
+                    <img src="assets/img/bg-masthead-2.jpg" alt="FoxWing Productions founders at work behind the camera" />
+                    <span class="tag">On set · Toronto</span>
                 </div>
-                <div class="row g-0 justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-	                        <div class="team-member">
-	                        	<a href="aleksandraFilatova">
-                            		<img class="mx-auto rounded-circle" src="assets/img/team/thumbnail/aleksandraFilatova.jpg" alt="..." id="hoveringProfile"/>
-                            	</a>
-		                        <h4>Aleksandra Filatova</h4>
-		                        <p class="text-muted">Co-Founder/ Producer</p>
-	                            <a class="btn btn-light btn-social mx-2" href="https://www.facebook.com/profile.php?id=100010053002277" aria-label="Aleksandra Filatova"><i class="fab fa-facebook-f"></i></a>
-	                            <a class="btn btn-light btn-social mx-2" href="https://www.imdb.com/name/nm11414546/" aria-label="Aleksandra Filatova"><i class="fab fa-imdb"></i></a>
-	                            <a class="btn btn-light btn-social mx-2" href="https://www.linkedin.com/in/aleksandra-filatova-767b07209/" aria-label="Aleksandra Filatova"><i class="fab fa-linkedin-in"></i></a>
-	                            <a class="btn btn-light btn-social mx-2" href="mailTo:aleksandra@foxwingproductions.com" aria-label="Aleksandra Filatova"><i class="fa-solid fa-envelope"></i></a>
-	                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-member">
-                        	<a href="rosaRiad">
-                            	<img class="mx-auto rounded-circle bg-light" src="assets/img/team/thumbnail/rosaRiad.jpg" alt="..." id="hoveringProfile"/>
-                            </a>
-                            <h4>Rosa Riad</h4>
-                            <p class="text-muted">Co-Founder/ Producer</p>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.facebook.com/rosa.riad.33" aria-label="Rosa Riad"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.imdb.com/name/nm11414430" aria-label="Rosa Riad"><i class="fab fa-imdb"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.linkedin.com/in/rosa-riad-625a04182/" aria-label="Rosa Riad"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="mailTo:rosa@foxwingproductions.com" aria-label="Rosa Riad"><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-member">
-                            <a href="alexandraSklokin">
-                                <img class="mx-auto rounded-circle" src="assets/img/team/thumbnail/alexandraSklokin.jpg" alt="..." id="hoveringProfile"/>
-                            </a>
-                            <h4>Alexandra Sklokin</h4>
-                            <p class="text-muted">Website Designer</p>
-                            <a class="btn btn-light btn-social mx-2" href="https://github.com/alexandrasklokin" aria-label="Alexandra Sklokin"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.linkedin.com/in/alexandrasklokin/" aria-label="Alexandra Sklokin"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="mailTo:alexandrasklokin@gmail.com" aria-label="Alexandra Sklokin"><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    </div>
+                <div class="about__body reveal" data-delay="1">
+                    <p class="eyebrow">Who we are</p>
+                    <p class="display-line">A <em>Toronto-based</em> film production company built by filmmakers, for stories that deserve to be seen.</p>
+                    <p>FoxWing Productions brings cinematic ambition to every frame — from intimate character dramas to neon-lit thrillers. We shepherd projects from first myth to final picture, pairing creative instinct with the production rigour a great film demands.</p>
+                    <p>Founded and led by producers who came up through the camera and the cutting room, we know the craft from the inside. Whatever the genre, our goal is the same: work that resonates deeply and leaves a lasting impression.</p>
+                    <a class="link-underline" href="#work">
+                        See the work
+                        <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
                 </div>
-                <!-- <div class="row g-0 justify-content-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="team-member">
-                            <a href="erhunAbbasli">
-                                <img class="mx-auto rounded-circle" src="assets/img/team/thumbnail/erhunAbbasli.jpg" alt="..." id="hoveringProfile"/>
-                            </a>
-                            <h4>Erhun Abbasli</h4>
-                            <p class="text-muted">Marketing Director</p>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.facebook.com/erhunabbasli?mibextid=LQQJ4d" aria-label="Erhun Abbasli"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.linkedin.com/in/erhun-abbasli/" aria-label="Erhun Abbasli"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://instagram.com/erhunabbasli?igshid=MzRlODBiNWFlZA==" aria-label="Erhun Abbasli"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="team-member">
-                            <a href="conorForrest">
-                                <img class="mx-auto rounded-circle" src="assets/img/team/thumbnail/conorForrest.jpg" alt="..." id="hoveringProfile"/>
-                            </a>
-                            <h4>Conor Forrest</h4>
-                            <p class="text-muted">Director of Development</p>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.facebook.com/sbunny.forrest/" aria-label="Conor Forrest"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.imdb.com/name/nm10545957/?ref_=tt_ov_dr" aria-label="Conor Forrest"><i class="fab fa-imdb"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.instagram.com/conor.forrestlcp/" aria-label="Conor Forrest"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://littlecatpictures.com/director" aria-label="Conor Forrest"><i class="fa-solid fa-globe"></i></a>
-                            <a class="btn btn-light btn-social mx-2" href="https://www.youtube.com/watch?v=W9irz0diPnM&ab_channel=ConorForrest" aria-label="Conor Forrest"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
-        </section>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
-                        <hr class="divider" />
-                        <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+        </div>
+    </section>
+
+    <!-- ===================== Services ===================== -->
+    <section class="section bg-charcoal" id="services">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow">What we do</p>
+                <h2 class="section-title">Full-service production, <em>end to end</em>.</h2>
+            </div>
+            <div class="services__grid">
+                <article class="service reveal">
+                    <span class="service__idx">01</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                    <h3 class="service__title">Location Services &amp; Permits</h3>
+                    <p class="service__text">Finding suitable filming locations, obtaining necessary permits, and ensuring legal compliance to shoot at those locations.</p>
+                </article>
+                <article class="service reveal" data-delay="1">
+                    <span class="service__idx">02</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg></span>
+                    <h3 class="service__title">Budget &amp; Scheduling</h3>
+                    <p class="service__text">Developing a comprehensive budget that outlines expenses and revenue sources for the film. Creating a production schedule that outlines when and where each scene will be shot.</p>
+                </article>
+                <article class="service reveal" data-delay="2">
+                    <span class="service__idx">03</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a2 2 0 0 0 2 2h4M18 15v-2a2 2 0 0 0-2-2h-4"/></svg></span>
+                    <h3 class="service__title">Production Management</h3>
+                    <p class="service__text">Overseeing the day-to-day operations of the film production, including managing the crew, coordinating activities, and problem-solving.</p>
+                </article>
+                <article class="service reveal" data-delay="3">
+                    <span class="service__idx">04</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9h19M7 5v4M12 5v4M17 5v4M7 19v-4M12 19v-4M17 19v-4"/></svg></span>
+                    <h3 class="service__title">Film-Related Research</h3>
+                    <p class="service__text">Conducting research related to the film's subject matter, historical context, or any other elements that require in-depth knowledge for an accurate portrayal.</p>
+                </article>
+                <article class="service reveal">
+                    <span class="service__idx">05</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><circle cx="9" cy="10" r="2.3"/><path d="M5.5 16c.6-1.8 2-2.7 3.5-2.7s2.9.9 3.5 2.7M15 8h4M15 12h3M9 21h6"/></svg></span>
+                    <h3 class="service__title">Casting</h3>
+                    <p class="service__text">Holding auditions, selecting actors for roles, and negotiating contracts with them.</p>
+                </article>
+                <article class="service reveal" data-delay="1">
+                    <span class="service__idx">06</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9.5" r="2.3"/><path d="M3.5 19c.6-3 2.9-4.6 5.5-4.6s4.9 1.6 5.5 4.6M16 13.5c2.2.2 3.8 1.6 4.3 3.9"/></svg></span>
+                    <h3 class="service__title">Crew Hiring</h3>
+                    <p class="service__text">Hiring and managing the various crew members necessary for a film production, including the director of photography, sound engineer, production designer, etc.</p>
+                </article>
+                <article class="service reveal" data-delay="2">
+                    <span class="service__idx">07</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7z"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span>
+                    <h3 class="service__title">Transport &amp; Logistical Services</h3>
+                    <p class="service__text">Arranging transportation for crew and equipment to and from filming locations. Managing logistics such as catering, accommodation, and scheduling.</p>
+                </article>
+                <article class="service reveal" data-delay="3">
+                    <span class="service__idx">08</span>
+                    <span class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h11v10H3z"/><circle cx="8.5" cy="12" r="2.3"/><path d="M14 10.5 21 7v10l-7-3.5zM3 7l2-2h6l2 2"/></svg></span>
+                    <h3 class="service__title">Equipment Rental</h3>
+                    <p class="service__text">Procuring and renting the necessary filming equipment, such as cameras, lighting, sound equipment, and props.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Featured Films ===================== -->
+    <section class="section" id="work">
+        <div class="container">
+            <div class="films__head reveal">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h2 class="section-title">The films we've <em>brought to life</em>.</h2>
+                </div>
+                <a class="link-underline" href="projects">
+                    All productions
+                    <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+            </div>
+
+            <div class="films__grid">
+                <a class="film film--wide reveal" href="projects#project1">
+                    <img class="film__img" src="assets/img/projects/project1/delivery1.png" alt="Still from DELIVERY" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Action · Thriller <span class="year">2023</span></div>
+                        <div class="film__name">DELIVERY</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+                <a class="film film--tall reveal" data-delay="1" href="projects#project2">
+                    <img class="film__img" src="assets/img/projects/project2/visiting1.jpg" alt="Still from I'm Only Visiting" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Mystery · Thriller <span class="year">2023</span></div>
+                        <div class="film__name">I'm Only Visiting</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+                <a class="film film--third reveal" href="projects#project3">
+                    <img class="film__img" src="assets/img/projects/project3/image1.png" alt="Still from Daddy-O" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Horror <span class="year">2023</span></div>
+                        <div class="film__name">Daddy-O</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+                <a class="film film--third reveal" data-delay="1" href="projects#project4">
+                    <img class="film__img" src="assets/img/projects/project4/tarantino1.jpg" alt="Still from Tarantino music video" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Music Video <span class="year">2023</span></div>
+                        <div class="film__name">Tarantino</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+                <a class="film film--third reveal" data-delay="2" href="projects#project5">
+                    <img class="film__img" src="assets/img/projects/project5/picture1.jpg" alt="Still from First Fan" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Drama <span class="year">2023</span></div>
+                        <div class="film__name">First Fan</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+                <a class="film film--half reveal" href="projects#project6">
+                    <img class="film__img" src="assets/img/projects/project6/picture1.jpg" alt="Still from Ava" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Drama <span class="year">2024</span></div>
+                        <div class="film__name">Ava</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+                <a class="film film--half reveal" data-delay="1" href="projects#project7">
+                    <img class="film__img" src="assets/img/projects/project7/picture1.jpg" alt="Still from Rooted Remedy" loading="lazy" />
+                    <span class="film__scrim"></span>
+                    <div class="film__meta">
+                        <div class="film__genre">Drama <span class="year">2024</span></div>
+                        <div class="film__name">Rooted Remedy</div>
+                        <span class="film__view">View film <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Gallery ===================== -->
+    <section class="section bg-charcoal" id="gallery">
+        <div class="container">
+            <div class="section-head centered reveal">
+                <p class="eyebrow centered">From the set</p>
+                <h2 class="section-title">A look behind the <em>lens</em>.</h2>
+            </div>
+        </div>
+        <div class="gallery__grid reveal">
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/1.jpg"><img src="assets/img/portfolio/thumbnails/1.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/7.jpg"><img src="assets/img/portfolio/thumbnails/7.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/24.jpg"><img src="assets/img/portfolio/thumbnails/24.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/15.png"><img src="assets/img/portfolio/thumbnails/15.png" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/14.jpg"><img src="assets/img/portfolio/thumbnails/14.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/22.jpg"><img src="assets/img/portfolio/thumbnails/22.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/23.jpg"><img src="assets/img/portfolio/thumbnails/23.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/6.jpg"><img src="assets/img/portfolio/thumbnails/6.jpg" alt="On-set photography" loading="lazy" /></a>
+            <a class="gallery__item" data-lightbox href="assets/img/portfolio/fullsize/12.jpg"><img src="assets/img/portfolio/thumbnails/12.jpg" alt="On-set photography" loading="lazy" /></a>
+        </div>
+    </section>
+
+    <!-- ===================== Team ===================== -->
+    <section class="section" id="team">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow">The people</p>
+                <h2 class="section-title">Behind <em>FoxWing</em>.</h2>
+            </div>
+            <div class="team__grid team__grid--single">
+                <div class="member reveal">
+                    <div class="member__media">
+                        <img src="assets/img/team/thumbnail/rosaRiad.jpg" alt="Rosa Riad" loading="lazy" />
+                        <div class="member__socials">
+                            <a href="https://www.facebook.com/rosa.riad.33" aria-label="Rosa Riad on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.3C16.7.2 15.8 0 14.7 0 12.3 0 10.8 1.5 10.8 4.1V6H8v3h2.8v8h3.2V9z"/></svg></a>
+                            <a href="https://www.imdb.com/name/nm11414430" aria-label="Rosa Riad on IMDb"><span class="imdb-mark">IMDb</span></a>
+                            <a href="https://www.linkedin.com/in/rosa-riad-625a04182/" aria-label="Rosa Riad on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z"/></svg></a>
+                            <a href="mailto:rosa@foxwingproductions.com" aria-label="Email Rosa Riad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="member__info">
+                        <div>
+                            <div class="member__name">Rosa Riad</div>
+                            <div class="member__role">Co-Founder / Producer</div>
+                        </div>
+                        <span class="member__view">Read bio</span>
+                    </div>
+                    <a class="member__stretch" href="rosaRiad" aria-label="Read bio: Rosa Riad"></a>
+                </div>
+
+                <!-- Additional team members (bio pages live at /erhunAbbasli and /conorForrest)
+                <div class="member reveal">
+                    <div class="member__media"><img src="assets/img/team/thumbnail/erhunAbbasli.jpg" alt="Erhun Abbasli" loading="lazy" /></div>
+                    <div class="member__info"><div><div class="member__name">Erhun Abbasli</div><div class="member__role">Marketing Director</div></div><span class="member__view">Read bio</span></div>
+                    <a class="member__stretch" href="erhunAbbasli" aria-label="Read bio: Erhun Abbasli"></a>
+                </div>
+                <div class="member reveal">
+                    <div class="member__media"><img src="assets/img/team/thumbnail/conorForrest.jpg" alt="Conor Forrest" loading="lazy" /></div>
+                    <div class="member__info"><div><div class="member__name">Conor Forrest</div><div class="member__role">Director of Development</div></div><span class="member__view">Read bio</span></div>
+                    <a class="member__stretch" href="conorForrest" aria-label="Read bio: Conor Forrest"></a>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="section bg-charcoal" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="reveal">
+                    <p class="eyebrow">Let's collaborate</p>
+                    <h2 class="contact__title">Have a story <em>worth telling?</em></h2>
+                    <p class="lead" style="margin-bottom:2.4rem;">Ready to start your next project with us? Send us a message and we'll get back to you as soon as possible.</p>
+
+                    <div class="contact__cards">
+                        <a class="contact__card" href="mailto:contact@foxwingproductions.com">
+                            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span>
+                            <span><span class="k">Email</span><br><span class="v">contact@foxwingproductions.com</span></span>
+                            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                        </a>
+                        <a class="contact__card" href="https://www.instagram.com/foxwingproductions/">
+                            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+                            <span><span class="k">Instagram</span><br><span class="v">@foxwingproductions</span></span>
+                            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+                        </a>
+                        <div class="contact__card" style="cursor:default;">
+                            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                            <span><span class="k">Based in</span><br><span class="v">Toronto, Ontario · Canada</span></span>
+                        </div>
                     </div>
                 </div>
 
-          	<div class="row justify-content-center">
-				<div class="col-lg-3 col-md-6 text-center">
-					<a href="https://www.instagram.com/foxwingproductions/">
-			  		<div class="mt-5">
-						<i class="fab fa-6x fa-instagram text-primary mb-4" id="hoveringIcon"></i>
-						<h3 class="h5 mb-2 text-muted">@foxwingproductions</h3>
-			  		</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6 text-center">
-			  		<a href="mailTo:contact@foxwingproductions.com">
-			  		<div class="mt-5">
-						<i class="fa-6x fa-solid fa-envelope text-primary mb-4" id="hoveringIcon"></i>
-						<h3 class="h5 mb-2 text-muted">contact@foxwingproductions.com</h3>
-			  		</div>
-			  		</a>
-				</div>
+                <form class="form reveal" data-delay="1" action="mailto:contact@foxwingproductions.com" method="post" enctype="text/plain">
+                    <div class="field">
+                        <input type="text" id="cf-name" name="Name" placeholder=" " required />
+                        <label for="cf-name">Your name</label>
+                    </div>
+                    <div class="field">
+                        <input type="email" id="cf-email" name="Email" placeholder=" " required />
+                        <label for="cf-email">Email address</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="cf-subject" name="Project" placeholder=" " />
+                        <label for="cf-subject">Project / subject</label>
+                    </div>
+                    <div class="field">
+                        <textarea id="cf-message" name="Message" rows="4" placeholder=" " required></textarea>
+                        <label for="cf-message">Tell us about your project</label>
+                    </div>
+                    <button type="submit" class="btn btn--solid" style="justify-self:start;">
+                        Send message
+                        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                    </button>
+                </form>
             </div>
-        </section>
-        
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <hr class="divider divider-muted" />
-            <div class="small text-center text-muted">2023 - FoxWing Productions</div>
-        </footer>
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        </div>
+    </section>
 
-    </body>
+    <!-- ===================== Footer ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/img/textLogo.png" alt="FoxWing Productions" />
+                    <p class="footer__tag">Myth to picture — <em>unleashing cinematic wonders</em>.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h5>Explore</h5>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="projects">Films</a>
+                        <a href="#team">Team</a>
+                    </div>
+                    <div class="footer__col">
+                        <h5>Connect</h5>
+                        <a href="mailto:contact@foxwingproductions.com">Email</a>
+                        <a href="https://www.instagram.com/foxwingproductions/">Instagram</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>© <span data-year>2024</span> FoxWing Productions. All rights reserved.</span>
+                <span>Toronto, Canada</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+        <button class="lightbox__nav prev" aria-label="Previous">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <img class="lightbox__img" src="" alt="Enlarged on-set photograph" />
+        <button class="lightbox__nav next" aria-label="Next">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+    </div>
+
+    <script src="js/cinematic.js"></script>
+</body>
 </html>
