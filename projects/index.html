@@ -3,32 +3,35 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Films — FoxWing Productions</title>
-    <meta name="description" content="The films of FoxWing Productions — DELIVERY, I'm Only Visiting, Daddy-O, Tarantino, First Fan, Ava and Rooted Remedy. Award-driven cinema produced in Toronto." />
-    <meta name="theme-color" content="#050505" />
+    <title>Films | FoxWing Productions</title>
+    <meta name="description" content="The films of FoxWing Productions: DELIVERY, I'm Only Visiting, Daddy-O, Tarantino, First Fan, Ava and Rooted Remedy. Award-driven cinema produced in Toronto." />
+    <meta name="theme-color" content="#040705" />
     <link rel="canonical" href="https://foxwingproductions.com/projects/" />
-
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="icon" href="../assets/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png" />
+    <link rel="apple-touch-icon" href="../assets/favicon-180.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
     <link href="../css/cinematic.css" rel="stylesheet" />
 </head>
 <body id="page-top">
-    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><span>View</span></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <header class="nav scrolled" id="mainNav">
         <div class="nav__inner">
             <a class="nav__brand" href="../" aria-label="FoxWing Productions home">
-                <img src="../assets/img/textLogo.png" alt="FoxWing Productions" />
+                <span class="brand-lockup"><img src="../assets/Newfoxlogo-transparent.png" alt="" /><span class="brand-lockup__txt"><span class="name">FoxWing</span><span class="sub">Productions</span></span></span>
             </a>
             <nav class="nav__links" aria-label="Primary">
                 <a class="nav__link active" href="../projects">Films</a>
                 <a class="nav__link" href="../#services">Services</a>
                 <a class="nav__link" href="../#gallery">Gallery</a>
                 <a class="nav__link" href="../#team">Team</a>
-                <a class="btn nav__cta" href="../#contact">Get in touch</a>
+                <a class="btn btn--cta nav__cta" href="../#contact"><span class="dot"></span>Work with Us</a>
             </nav>
             <button class="nav__toggle" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -46,9 +49,9 @@
     <!-- Sub-hero -->
     <section class="subhero">
         <div class="container subhero__inner">
-            <p class="eyebrow reveal in">Selected work · 2023 — 2024</p>
-            <h1 class="subhero__title reveal in">The <em class="gold-text">FoxWing</em><br>filmography.</h1>
-            <p class="subhero__sub reveal in">Seven productions across action, thriller, mystery, horror, drama and music video — each carried from first myth to final picture.</p>
+            <p class="eyebrow reveal in">Selected work · 2023-2024</p>
+            <h1 class="subhero__title reveal in">The <em class="green-text">FoxWing</em><br>filmography.</h1>
+            <p class="subhero__sub reveal in">A selection of our work across action, thriller, mystery, horror, drama and music video, each carried from first myth to final picture.</p>
 
             <div class="filters reveal in" role="tablist" aria-label="Filter films by genre">
                 <button class="filter active" data-filter="all">All</button>
@@ -69,10 +72,10 @@
         <article class="project" id="project1" data-genres="action thriller">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project1/delivery1.png" alt="DELIVERY — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery2.png" alt="DELIVERY — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery3.png" alt="DELIVERY — still 3" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery4.png" alt="DELIVERY — still 4" /></div>
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project1/delivery1.png" alt="DELIVERY, still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery2.png" alt="DELIVERY, still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery3.png" alt="DELIVERY, still 3" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project1/delivery4.png" alt="DELIVERY, still 4" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -100,9 +103,9 @@
         <article class="project" id="project2" data-genres="mystery thriller">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project2/visiting1.jpg" alt="I'm Only Visiting — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project2/visiting2.jpg" alt="I'm Only Visiting — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project2/visiting3.jpg" alt="I'm Only Visiting — still 3" /></div>
+                    <div class="project__slide is-active"><img class="is-scope" src="../assets/img/projects/project2/visiting1.jpg" alt="I'm Only Visiting, still 1" /></div>
+                    <div class="project__slide"><img class="is-scope" src="../assets/img/projects/project2/visiting2.jpg" alt="I'm Only Visiting, still 2" /></div>
+                    <div class="project__slide"><img class="is-scope" src="../assets/img/projects/project2/visiting3.jpg" alt="I'm Only Visiting, still 3" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -129,10 +132,10 @@
         <article class="project" id="project3" data-genres="horror">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project3/image1.png" alt="Daddy-O — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project3/image2.png" alt="Daddy-O — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project3/image3.png" alt="Daddy-O — still 3" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project3/image4.png" alt="Daddy-O — still 4" /></div>
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project3/image1.png" alt="Daddy-O, still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project3/image2.png" alt="Daddy-O, still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project3/image3.png" alt="Daddy-O, still 3" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project3/image4.png" alt="Daddy-O, still 4" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -161,10 +164,10 @@
         <article class="project" id="project4" data-genres="music">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project4/tarantino1.jpg" alt="Tarantino — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino2.jpg" alt="Tarantino — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino3.jpg" alt="Tarantino — still 3" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino4.jpg" alt="Tarantino — still 4" /></div>
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project4/tarantino1.jpg" alt="Tarantino, still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino2.jpg" alt="Tarantino, still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino3.jpg" alt="Tarantino, still 3" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project4/tarantino4.jpg" alt="Tarantino, still 4" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -191,9 +194,9 @@
         <article class="project" id="project5" data-genres="drama">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project5/picture1.jpg" alt="First Fan — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project5/picture2.jpg" alt="First Fan — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project5/picture3.jpg" alt="First Fan — still 3" /></div>
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project5/picture1.jpg" alt="First Fan, still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project5/picture2.jpg" alt="First Fan, still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project5/picture3.jpg" alt="First Fan, still 3" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -219,9 +222,9 @@
         <article class="project" id="project6" data-genres="drama">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project6/picture1.jpg" alt="Ava — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project6/picture2.jpg" alt="Ava — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project6/picture3.jpg" alt="Ava — still 3" /></div>
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project6/picture1.jpg" alt="Ava, still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project6/picture2.jpg" alt="Ava, still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project6/picture3.jpg" alt="Ava, still 3" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -247,9 +250,9 @@
         <article class="project" id="project7" data-genres="drama">
             <div class="project__media">
                 <div class="project__slides">
-                    <div class="project__slide is-active"><img src="../assets/img/projects/project7/picture1.jpg" alt="Rooted Remedy — still 1" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project7/picture2.jpg" alt="Rooted Remedy — still 2" /></div>
-                    <div class="project__slide"><img src="../assets/img/projects/project7/picture3.jpg" alt="Rooted Remedy — still 3" /></div>
+                    <div class="project__slide is-active"><img src="../assets/img/projects/project7/picture1.jpg" alt="Rooted Remedy, still 1" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project7/picture2.jpg" alt="Rooted Remedy, still 2" /></div>
+                    <div class="project__slide"><img src="../assets/img/projects/project7/picture3.jpg" alt="Rooted Remedy, still 3" /></div>
                 </div>
                 <div class="project__dots">
                     <button class="active" aria-label="Slide 1"></button>
@@ -290,8 +293,8 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer__brand">
-                    <img src="../assets/img/textLogo.png" alt="FoxWing Productions" />
-                    <p class="footer__tag">Myth to picture — <em>unleashing cinematic wonders</em>.</p>
+                    <span class="brand-lockup"><img src="../assets/Newfoxlogo-transparent.png" alt="" /><span class="brand-lockup__txt"><span class="name">FoxWing</span><span class="sub">Productions</span></span></span>
+                    <p class="footer__tag">Myth to picture: <em>unleashing cinematic wonders</em>.</p>
                 </div>
                 <div class="footer__links">
                     <div class="footer__col">
