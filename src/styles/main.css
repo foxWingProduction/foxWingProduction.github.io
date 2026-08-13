@@ -744,7 +744,7 @@ body.menu-open .nav__overlay a:nth-child(6) { transition-delay: 0.44s; }
   display: block;
   transform: translateY(110%);
 }
-/* The reel plays alone first: the wordmark arrives at 2s, the nav at 5s.
+/* The reel plays alone first: the wordmark arrives at 2s, the nav at 4s.
    Gated on .loaded rather than a bare delay, or the wait would elapse behind
    the preloader while nothing is on screen yet. */
 body.loaded .hero__title .line > span { animation: rise 1.15s var(--ease-out) forwards; }
@@ -755,7 +755,7 @@ body.loaded .hero__title .line:nth-child(2) > span { animation-delay: 2.15s; }
 /* Home only, matched on the reel being present rather than a class added at
    hydration - a JS-applied class would let the nav flash in first. */
 body:has(.showreel) .nav { opacity: 0; }
-body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 5s forwards; }
+body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwards; }
 @keyframes navIn { to { opacity: 1; } }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
