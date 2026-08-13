@@ -36,6 +36,8 @@ export interface FilmCard {
   size: 'wide' | 'tall' | 'third' | 'half';
   href: string;
   title: string;
+  /** Record on the filmography page this card scrolls to. */
+  filmSlug: string;
   tags: string[];
   year: string;
   stills: Still[];
@@ -49,6 +51,7 @@ export const filmCards: FilmCard[] = [
     "size": "wide",
     "href": "filmography",
     "title": "DELIVERY",
+    "filmSlug": "delivery",
     "tags": [
       "Action",
       "Thriller"
@@ -79,6 +82,7 @@ export const filmCards: FilmCard[] = [
     "size": "tall",
     "href": "filmography",
     "title": "I'm Only Visiting",
+    "filmSlug": "im-only-visiting",
     "tags": [
       "Mystery",
       "Thriller"
@@ -105,6 +109,7 @@ export const filmCards: FilmCard[] = [
     "size": "third",
     "href": "filmography",
     "title": "Daddy-O",
+    "filmSlug": "daddy-o",
     "tags": [
       "Horror"
     ],
@@ -130,6 +135,7 @@ export const filmCards: FilmCard[] = [
     "size": "third",
     "href": "filmography",
     "title": "Tarantino",
+    "filmSlug": "tarantino",
     "tags": [
       "Music Video"
     ],
@@ -155,6 +161,7 @@ export const filmCards: FilmCard[] = [
     "size": "third",
     "href": "filmography",
     "title": "First Fan",
+    "filmSlug": "first-fan",
     "tags": [
       "Drama"
     ],
@@ -180,6 +187,7 @@ export const filmCards: FilmCard[] = [
     "size": "half",
     "href": "filmography",
     "title": "Ava",
+    "filmSlug": "ava",
     "tags": [
       "Drama"
     ],
@@ -205,6 +213,7 @@ export const filmCards: FilmCard[] = [
     "size": "half",
     "href": "filmography",
     "title": "Rooted Remedy",
+    "filmSlug": "rooted-remedy",
     "tags": [
       "Drama"
     ],

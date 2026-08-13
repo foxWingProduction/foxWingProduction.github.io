@@ -36,6 +36,9 @@ export function Work() {
               key={card.title}
               className={`film film--${card.size} reveal`}
               to={`/${card.href}`}
+              // Target travels in navigation state, not the URL: every card
+              // still reads /filmography.
+              state={{ scrollTo: card.filmSlug }}
               data-cursor="View"
               {...(card.delay !== null ? { 'data-delay': String(card.delay) } : {})}
             >

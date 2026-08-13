@@ -22,6 +22,7 @@ export function FilmRecord({ film, hidden }: { film: Film; hidden: boolean }) {
   return (
     <article
       className={`project${hidden ? ' is-hidden' : ''}`}
+      data-film={film.slug}
       data-genres={film.genres.join(' ')}
     >
       <div
