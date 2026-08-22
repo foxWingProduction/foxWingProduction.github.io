@@ -25,7 +25,7 @@ export const navLinks: NavLink[] = [
   { label: 'Services', href: '/#services', section: 'services' },
   { label: 'Work', href: '/#work', section: 'work' },
   { label: 'Gallery', href: '/#gallery', section: 'gallery' },
-  { label: 'Team', href: '/#team', section: 'team' },
+  { label: 'Talent', href: '/#team', section: 'team' },
 ];
 
 /** Inner pages swap in a shorter set led by Films, and mark their own entry. */
@@ -33,7 +33,7 @@ export const innerNavLinks: NavLink[] = [
   { label: 'Films', href: '/filmography' },
   { label: 'Services', href: '/#services' },
   { label: 'Gallery', href: '/#gallery' },
-  { label: 'Team', href: '/#team' },
+  { label: 'Talent', href: '/#team' },
 ];
 
 export const footerLinks = {
@@ -41,7 +41,7 @@ export const footerLinks = {
     { label: 'About', href: '/#about' },
     { label: 'Services', href: '/#services' },
     { label: 'Films', href: '/filmography' },
-    { label: 'Team', href: '/#team' },
+    { label: 'Talent', href: '/#team' },
   ],
   connect: [
     { label: 'Email', href: `mailto:${site.email}` },

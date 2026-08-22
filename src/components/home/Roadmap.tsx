@@ -154,23 +154,28 @@ export function Roadmap() {
           </div>
 
           <div className="roadmap__panels" ref={panelsRef}>
-            {roadmapSteps.map((s, i) => (
-              <div
-                className={`phase${i === current ? ' is-active is-entering' : ''}`}
-                key={`${s.n}-${i === current ? enterKey : 'idle'}`}
-                role="tabpanel"
-                id={`phase-${i + 1}`}
-                aria-labelledby={`step-${i + 1}`}
-                hidden={i !== current}
-              >
-                <Icon className="phase__icon" svg={s.icon} />
-                <p className="phase__stage">
-                  {s.phase} <span className="phase__count">{s.n} / 08</span>
-                </p>
-                <h3 className="phase__title">{s.title}</h3>
-                <p className="phase__text">{s.text}</p>
-              </div>
-            ))}
+            {/* Every phase stays in flow (grid-stacked, visibility-hidden rather than
+                display:none) so the tallest one sets the panel's height and the card
+                doesn't resize as you step through - see .roadmap__stack in main.css. */}
+            <div className="roadmap__stack">
+              {roadmapSteps.map((s, i) => (
+                <div
+                  className={`phase${i === current ? ' is-active is-entering' : ''}`}
+                  key={`${s.n}-${i === current ? enterKey : 'idle'}`}
+                  role="tabpanel"
+                  id={`phase-${i + 1}`}
+                  aria-labelledby={`step-${i + 1}`}
+                  aria-hidden={i !== current}
+                >
+                  <Icon className="phase__icon" svg={s.icon} />
+                  <p className="phase__stage">
+                    {s.phase} <span className="phase__count">{s.n} / 08</span>
+                  </p>
+                  <h3 className="phase__title">{s.title}</h3>
+                  <p className="phase__text">{s.text}</p>
+                </div>
+              ))}
+            </div>
 
             <div className="roadmap__nav">
               <button

@@ -8,11 +8,7 @@ import { useScrollEngine } from '@/hooks/useScrollEngine';
 
 const GENRES = [
   { key: 'all', label: 'All' },
-  { key: 'drama', label: 'Drama' },
-  { key: 'thriller', label: 'Thriller' },
-  { key: 'mystery', label: 'Mystery' },
-  { key: 'horror', label: 'Horror' },
-  { key: 'action', label: 'Action' },
+  { key: 'film', label: 'Film' },
   { key: 'music', label: 'Music Video' },
 ];
 
@@ -25,15 +21,15 @@ export default function Films() {
     <Layout condensed variant="inner" activeLabel="Films">
       <section className="subhero">
         <div className="container subhero__inner">
-          <p className="eyebrow reveal in">Selected work &middot; 2023-2024</p>
+          <p className="eyebrow reveal in">Selected work &middot; 2023-2025</p>
           <h1 className="subhero__title reveal in">
             The <em className="green-text">FoxWing</em>
             <br />
             filmography.
           </h1>
           <p className="subhero__sub reveal in">
-            A selection of our work across action, thriller, mystery, horror, drama and
-            music video, each carried from first myth to final picture.
+            A selection of our film and music video work, each carried from first myth to
+            final picture.
           </p>
 
           <div className="filters reveal in" role="tablist" aria-label="Filter films by genre">

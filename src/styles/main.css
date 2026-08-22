@@ -931,16 +931,14 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
 .roadmap-section.video-ready .roadmap__frame { opacity: 1; }
 .roadmap-section.video-ready .roadmap__poster { opacity: 0; transition: opacity 1.4s var(--ease) 0.3s; }
 /* Enough scrim for the copy to win, but the footage still has to read as
-   moving picture. The panel carries its own blurred plate, so the heaviest
-   darkening is kept to the left where the bare rail text sits. */
+   moving picture. Neither column carries its own card fill, so both sides
+   lean on this scrim for legibility. */
 .roadmap__scrim {
   position: absolute;
   inset: 0;
   background:
     linear-gradient(180deg, rgba(4,7,5,0.94) 0%, rgba(4,7,5,0.5) 18%, rgba(4,7,5,0.46) 80%, rgba(4,7,5,0.94) 100%),
-    /* Left stays heavy because the rail text sits on bare footage; the right
-       is let through, since the panel carries its own blurred plate. */
-    linear-gradient(90deg, rgba(4,7,5,0.9) 0%, rgba(4,7,5,0.7) 32%, rgba(4,7,5,0.38) 62%, rgba(4,7,5,0.28) 100%);
+    linear-gradient(90deg, rgba(4,7,5,0.9) 0%, rgba(4,7,5,0.74) 32%, rgba(4,7,5,0.6) 62%, rgba(4,7,5,0.56) 100%);
 }
 
 .roadmap {
@@ -974,6 +972,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   text-transform: uppercase;
   color: var(--muted-2);
   margin: 1.5rem 0 0.7rem;
+  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
 }
 .roadmap__phase:first-child { margin-top: 0; }
 
@@ -1006,12 +1005,14 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   color: var(--muted-2);
   flex-shrink: 0;
   transition: color 0.4s var(--ease);
+  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
 }
 .step__name {
   font-size: 0.99rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.35;
+  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
 }
 .step:hover { color: var(--off-white); background: rgba(255,255,255,0.03); padding-left: 0.6rem; }
 .step:hover .step__node { border-color: var(--off-white); }
@@ -1028,18 +1029,30 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
 /* ---- Detail panel ---- */
 .roadmap__panels {
   position: relative;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: linear-gradient(160deg, rgba(15, 21, 18, 0.94), rgba(4, 7, 5, 0.86));
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  padding: clamp(1.8rem, 3.4vw, 3rem);
+  padding-top: 0.4rem;
   min-height: 340px;
   display: flex;
   flex-direction: column;
 }
-.phase { display: flex; flex-direction: column; flex: 1; }
-.phase[hidden] { display: none; }
+/* Every phase occupies the same cell, so the tallest one sets the row
+   height and the card stays a fixed size as you step through. Inactive
+   phases use visibility (not display:none) so they still count toward
+   that sizing. */
+.roadmap__stack { display: grid; }
+.roadmap__stack > .phase { grid-area: 1 / 1; min-width: 0; }
+.phase {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.phase.is-active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s var(--ease);
+}
 .phase.is-entering .phase__icon,
 .phase.is-entering .phase__stage,
 .phase.is-entering .phase__title,
@@ -1072,6 +1085,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   text-transform: uppercase;
   color: var(--muted-2);
   margin-bottom: 0.9rem;
+  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
 }
 .phase__count { color: var(--muted); letter-spacing: 0.14em; }
 .phase__title {
@@ -1080,12 +1094,16 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   letter-spacing: -0.028em;
   line-height: 1.08;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(4,7,5,0.9), 0 4px 28px rgba(4,7,5,0.75);
   font-variation-settings: "opsz" 72;
 }
 .phase__text {
   font-size: 1rem;
   line-height: 1.75;
-  color: var(--muted);
+  /* Sits directly on moving footage now the panel has no fill of its own,
+     so this needs more body than --muted's usual 0.62 alpha to stay legible. */
+  color: rgba(226, 240, 232, 0.86);
+  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 3px 20px rgba(4,7,5,0.75);
   max-width: 54ch;
 }
 .roadmap__nav { display: flex; gap: 0.6rem; margin-top: auto; padding-top: 2rem; }
@@ -1483,6 +1501,16 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   background: var(--charcoal);
 }
 .contact__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+/* Shown immediately so the section never shows bare charcoal while the clip
+   loads - see .roadmap__poster for the same pattern. */
+.contact__poster {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 100%; height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(1.1) saturate(0.95);
+}
 .contact__frame {
   max-width: none;
   position: absolute;
@@ -1499,6 +1527,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   transition: opacity 1.4s var(--ease);
 }
 .contact-section.video-ready .contact__frame { opacity: 1; }
+.contact-section.video-ready .contact__poster { opacity: 0; transition: opacity 1.4s var(--ease) 0.3s; }
 .contact__scrim {
   position: absolute;
   inset: 0;
@@ -1929,7 +1958,24 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   .about__media { aspect-ratio: 16 / 11; }
   .films__grid { grid-template-columns: 1fr; }
   .gallery__grid { grid-template-columns: repeat(2, 1fr); }
-  .team__grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+  /* Four tall 4:5 cards stacked was the same wall-of-scroll problem as the
+     gallery - swipe a single row instead, same fix as .gallery__grid. */
+  .team__grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-inline: var(--gutter);
+    max-width: none;
+    margin-inline: 0;
+  }
+  .team__grid::-webkit-scrollbar { display: none; }
+  .team__grid > .member {
+    flex: 0 0 auto;
+    width: 72%;
+    scroll-snap-align: start;
+  }
   .team__grid--single .member { grid-template-columns: 1fr; gap: 1.4rem; }
   .team__grid--single .member__info { padding-bottom: 0; }
   .project { grid-template-columns: 1fr; }
@@ -1960,7 +2006,22 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
 
 @media (max-width: 520px) {
   .stats__grid { grid-template-columns: 1fr; }
-  .gallery__grid { grid-template-columns: 1fr; }
+  /* Nine full-width rows was a wall of scroll on a phone - swipe a single
+     row instead, peeking the next image to hint there's more. */
+  .gallery__grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-inline: var(--gutter);
+  }
+  .gallery__grid::-webkit-scrollbar { display: none; }
+  .gallery__item {
+    flex: 0 0 auto;
+    width: 72%;
+    scroll-snap-align: start;
+  }
   .credit { grid-template-columns: 1fr; gap: 0.2rem; }
 }
 

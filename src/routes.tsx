@@ -51,13 +51,13 @@ export const routes: RouteRecord[] = [
             <Seo
               path="/filmography"
               title="Films | FoxWing Productions"
-              description="The films of FoxWing Productions: DELIVERY, I'm Only Visiting, Daddy-O, Tarantino, First Fan, Ava and Rooted Remedy. Award-driven cinema produced in Toronto."
+              description="The films of FoxWing Productions: Return To Sender, Insomnia, Rooted Remedy, Ava, First Fan, Tarantino, Daddy-O, I'm Only Visiting and DELIVERY. Award-driven cinema produced in Toronto."
             />
             <Films />
           </>
         ),
       },
-      ...team.map((member) => ({
+      ...team.filter((member) => member.prose.length > 0 && !member.hidden).map((member) => ({
         path: member.slug,
         element: (
           <>

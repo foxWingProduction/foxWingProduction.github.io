@@ -1,18 +1,20 @@
 import type { TeamMember } from '@/types/content';
 
-/** Every member with a bio page. Only those in `featuredTeam` appear on the
- *  home page; the rest are reachable by direct URL, as before. */
+/** Everyone on the roster. Only those with `prose` content and not `hidden`
+ *  get a bio page/route; only those in `featuredTeam` appear on the home
+ *  page's talent grid. */
 export const team: TeamMember[] = [
   {
     "slug": "rosa-riad",
     "name": "Rosa Riad",
-    "role": "Co-Founder / Producer",
+    "role": "Founder / Executive Producer",
     "tags": [
       "Management",
       "Camera",
       "Direction"
     ],
     "photo": "/images/team/fullsize/rosa-riad.jpg",
+    "hidden": true,
     "socials": [
       {
         "href": "https://www.facebook.com/rosa.riad.33",
@@ -253,11 +255,50 @@ export const team: TeamMember[] = [
     ],
     "title": "Alexandra Sklokin | FoxWing Productions",
     "description": "Alexandra Sklokin, Website Designer at FoxWing Productions, with a background in computer science, mathematics and machine learning."
+  },
+  {
+    "slug": "al-raffay-mirza",
+    "name": "Al-Raffay Mirza",
+    "role": "Head Producer",
+    "tags": [
+      "Production"
+    ],
+    "photo": "/images/team/fullsize/al-raffay-mirza.jpg",
+    "socials": [],
+    "prose": [],
+    "title": "Al-Raffay Mirza | FoxWing Productions",
+    "description": "Al-Raffay Mirza, Head Producer at FoxWing Productions."
+  },
+  {
+    "slug": "mustafa-el-sayed",
+    "name": "Mustafa El Sayed",
+    "role": "Producer",
+    "tags": [
+      "Production"
+    ],
+    "photo": "/images/team/fullsize/mustafa-el-sayed.jpg",
+    "socials": [],
+    "prose": [],
+    "title": "Mustafa El Sayed | FoxWing Productions",
+    "description": "Mustafa El Sayed, Producer at FoxWing Productions."
+  },
+  {
+    "slug": "zaid-habayeb",
+    "name": "Zaid Habayeb",
+    "role": "Actor",
+    "tags": [
+      "Acting"
+    ],
+    "photo": "/images/team/fullsize/zaid-habayeb.jpg",
+    "socials": [],
+    "prose": [],
+    "title": "Zaid Habayeb | FoxWing Productions",
+    "description": "Zaid Habayeb, Actor at FoxWing Productions."
   }
 ];
 
 export const memberBySlug = (slug: string): TeamMember | undefined =>
   team.find((m) => m.slug === slug);
 
-/** Matches the old home page, which showed Rosa only. */
-export const featuredTeam = ['rosa-riad'];
+/** The talent grid on the home page. */
+export const featuredTeam = ['rosa-riad', 'al-raffay-mirza', 'mustafa-el-sayed', 'zaid-habayeb'];

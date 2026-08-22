@@ -10,6 +10,12 @@ export function Contact() {
   return (
     <section className="section contact-section" id="contact" ref={ref}>
       <div className="contact__bg" aria-hidden="true">
+        <img
+          className="contact__poster"
+          src="/images/films/rooted-remedy/still-1.jpg"
+          alt=""
+          loading="lazy"
+        />
         <iframe
           className="contact__frame"
           title=""

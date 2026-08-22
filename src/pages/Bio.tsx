@@ -10,7 +10,7 @@ export default function Bio({ member }: { member: TeamMember }) {
   useScrollEngine();
 
   return (
-    <Layout condensed variant="inner" activeLabel="Team">
+    <Layout condensed variant="inner" activeLabel="Talent">
       <main className="section" style={{ paddingTop: 'calc(var(--nav-h) + 4rem)' }}>
         <div className="container">
           <Link className="link-underline" to="/#team" style={{ marginBottom: '2.5rem' }}>
@@ -27,7 +27,7 @@ export default function Bio({ member }: { member: TeamMember }) {
             >
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
-            Back to team
+            Back to talent
           </Link>
           <div className="bio" style={{ marginTop: '2.5rem' }}>
             <div className="bio__media reveal in">

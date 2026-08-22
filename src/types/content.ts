@@ -14,7 +14,7 @@ export interface Film {
   slug: string;
   title: string;
   year: string;
-  /** Human-readable genre words shown in the year line, e.g. ["Action", "Thriller"]. */
+  /** Human-readable genre words shown in the year line, e.g. ["Film"] or ["Music Video"]. */
   genreLabels: string[];
   /** Lowercase keys the genre filter matches against. */
   genres: string[];
@@ -56,7 +56,10 @@ export interface TeamMember {
   tags: string[];
   photo: string;
   socials: Social[];
+  /** A bio page/route is generated only when this has content and `hidden` isn't set. */
   prose: ProseBlock[];
   title: string;
   description: string;
+  /** Temporarily suppresses an otherwise-ready bio page without deleting its content. */
+  hidden?: boolean;
 }
