@@ -1,7 +1,7 @@
 import { type ReactNode } from 'react';
 import { Nav } from './Nav';
 import { Footer } from './Footer';
-import { Cursor, Preloader, ScrollProgress } from './SiteChrome';
+import { BackToTop, Cursor, Preloader, ScrollProgress } from './SiteChrome';
 import { useCursor } from '@/hooks/useCursor';
 
 interface LayoutProps {
@@ -36,6 +36,7 @@ export function Layout({
       <Nav condensed={condensed} activeSection={activeSection} variant={variant} activeLabel={activeLabel} />
       {children}
       <Footer />
+      <BackToTop />
     </>
   );
 }

@@ -8,7 +8,7 @@ export function Gallery() {
 
   return (
     <>
-      <section className="section bg-charcoal section--close-top section--close-bottom" id="gallery">
+      <section className="section section--close-top section--close-bottom" id="gallery">
         <div className="container">
           <div className="section-head centered">
             <p className="eyebrow centered reveal">From the set</p>

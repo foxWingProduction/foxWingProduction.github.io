@@ -10,11 +10,11 @@
 /* ---------- Tokens ---------- */
 :root {
   /* Ground - blacks carry a faint green cast so the accent feels native */
-  --black:        #040705;
-  --black-deep:   #010302;
-  --charcoal:     #0a0f0c;
-  --charcoal-2:   #0f1512;
-  --charcoal-3:   #161e19;
+  --black:        #0c0f0d;
+  --black-deep:   #070908;
+  --charcoal:     #121714;
+  --charcoal-2:   #171d1a;
+  --charcoal-3:   #1e2621;
 
   --line:         rgba(214, 240, 224, 0.10);
   --line-strong:  rgba(214, 240, 224, 0.20);
@@ -45,7 +45,7 @@
 
   --grad-green:   linear-gradient(105deg, #5fe39b 0%, #35c77e 42%, #17683b 100%);
   --grad-green-v: linear-gradient(180deg, #5fe39b 0%, #1e8b4e 100%);
-  --grad-fade:    linear-gradient(180deg, rgba(4,7,5,0) 0%, rgba(4,7,5,0.92) 100%);
+  --grad-fade:    linear-gradient(180deg, rgba(12,15,13,0) 0%, rgba(12,15,13,0.92) 100%);
 
   --glow-sm:      0 0 18px rgba(53, 199, 126, 0.28);
   --glow-md:      0 0 36px rgba(53, 199, 126, 0.30), 0 0 90px rgba(23, 104, 59, 0.22);
@@ -122,7 +122,7 @@ body::before {
   height: 60vh;
   z-index: 0;
   pointer-events: none;
-  background: radial-gradient(60% 100% at 50% 100%, rgba(255, 255, 255, 0.03) 0%, rgba(4, 7, 5, 0) 70%);
+  background: radial-gradient(60% 100% at 50% 100%, rgba(255, 255, 255, 0.03) 0%, rgba(12,15,13, 0) 70%);
 }
 
 /* ============================================================================
@@ -181,6 +181,34 @@ body.loaded .preloader { opacity: 0; visibility: hidden; }
   transform-origin: left;
   background: linear-gradient(90deg, rgba(242,246,243,0.35), var(--white));
   pointer-events: none;
+}
+
+/* Mobile-only jump-to-top - hidden entirely on desktop via the display:none
+   default below, only switched on inside the max-width query. */
+.back-to-top {
+  position: fixed;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 900;
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(18, 23, 20, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--off-white);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+}
+@media (max-width: 760px) {
+  .back-to-top { display: flex; }
+  .back-to-top.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
 }
 
 .cursor, .cursor-dot {
@@ -328,7 +356,7 @@ h1, h2, h3, h4 {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(45% 55% at 82% 12%, rgba(255, 255, 255, 0.035) 0%, rgba(4, 7, 5, 0) 68%);
+  background: radial-gradient(45% 55% at 82% 12%, rgba(255, 255, 255, 0.035) 0%, rgba(12,15,13, 0) 68%);
 }
 
 .section-head { max-width: 800px; margin-bottom: clamp(2.5rem, 5vw, 4.5rem); }
@@ -383,7 +411,7 @@ h1, h2, h3, h4 {
 .btn--solid::before { background: var(--grad-green); }
 .btn--solid:hover { color: var(--black-deep); }
 
-.btn--ghost { border-color: var(--line-strong); background: rgba(4, 7, 5, 0.35); backdrop-filter: blur(10px); }
+.btn--ghost { border-color: var(--line-strong); background: rgba(12,15,13, 0.35); backdrop-filter: blur(10px); }
 
 /* --- Primary "Get in touch" CTA: pill with a live green halo + light sweep --- */
 .btn--cta {
@@ -431,7 +459,7 @@ h1, h2, h3, h4 {
   width: 6px; height: 6px;
   border-radius: 999px;
   background: var(--black-deep);
-  box-shadow: 0 0 0 3px rgba(4, 7, 5, 0.18);
+  box-shadow: 0 0 0 3px rgba(12,15,13, 0.18);
   animation: ctaBlink 2.4s var(--ease-io) infinite;
 }
 @keyframes ctaBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
@@ -489,7 +517,7 @@ h1, h2, h3, h4 {
 }
 .nav.scrolled {
   height: 74px;
-  background: rgba(4, 7, 5, 0.72);
+  background: rgba(12,15,13, 0.72);
   backdrop-filter: blur(18px) saturate(150%);
   -webkit-backdrop-filter: blur(18px) saturate(150%);
   border-bottom-color: var(--line);
@@ -601,7 +629,7 @@ body.menu-open .nav__toggle span:nth-child(3) { top: 10px; transform: rotate(-45
   inset: 0;
   z-index: 1050;
   background:
-    radial-gradient(80% 60% at 50% 100%, rgba(255, 255, 255, 0.05) 0%, rgba(4, 7, 5, 0) 70%),
+    radial-gradient(80% 60% at 50% 100%, rgba(255, 255, 255, 0.05) 0%, rgba(12,15,13, 0) 70%),
     var(--black-deep);
   display: flex;
   flex-direction: column;
@@ -702,9 +730,10 @@ body.menu-open .nav__overlay a:nth-child(6) { transition-delay: 0.44s; }
   transition: opacity 1.4s var(--ease);
 }
 .showreel.video-ready .hero__frame { opacity: 1; }
-.showreel.video-ready 
 /* Legibility scrim: darkens top for the nav, centre for the wordmark, and the
-   floor for the scroll cue - without flattening the picture. */
+   floor for the scroll cue - without flattening the picture. Always on, not
+   gated on video-ready, so it still works over the poster/black backdrop
+   before the clip loads. */
 .hero__scrim {
   position: absolute;
   inset: 0;
@@ -712,11 +741,11 @@ body.menu-open .nav__overlay a:nth-child(6) { transition-delay: 0.44s; }
   pointer-events: none;
   background:
     /* top: carries the nav */
-    linear-gradient(180deg, rgba(4,7,5,0.78) 0%, rgba(4,7,5,0.2) 16%, rgba(4,7,5,0) 30%),
+    linear-gradient(180deg, rgba(12,15,13,0.78) 0%, rgba(12,15,13,0.2) 16%, rgba(12,15,13,0) 30%),
     /* bottom: carries the stats band and lands on the next section */
-    linear-gradient(0deg, rgba(4,7,5,0.9) 0%, rgba(4,7,5,0.66) 14%, rgba(4,7,5,0.4) 26%, rgba(4,7,5,0) 44%),
+    linear-gradient(0deg, rgba(12,15,13,0.9) 0%, rgba(12,15,13,0.66) 14%, rgba(12,15,13,0.4) 26%, rgba(12,15,13,0) 44%),
     /* centre: holds the wordmark */
-    radial-gradient(58% 40% at 50% 36%, rgba(4,7,5,0.72) 0%, rgba(4,7,5,0.32) 55%, rgba(4,7,5,0) 100%);
+    radial-gradient(58% 40% at 50% 36%, rgba(12,15,13,0.72) 0%, rgba(12,15,13,0.32) 55%, rgba(12,15,13,0) 100%);
 }
 
 .hero__inner {
@@ -835,7 +864,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   inset: 0;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(200deg, rgba(4,7,5,0) 40%, rgba(4,7,5,0.75) 100%);
+  background: linear-gradient(200deg, rgba(12,15,13,0) 40%, rgba(12,15,13,0.75) 100%);
 }
 .about__media::before {
   content: "";
@@ -867,7 +896,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--off-white);
-  background: rgba(4, 7, 5, 0.55);
+  background: rgba(12,15,13, 0.55);
   backdrop-filter: blur(10px);
   padding: 0.55rem 1.05rem;
   border: 1px solid var(--line-strong);
@@ -937,8 +966,8 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4,7,5,0.94) 0%, rgba(4,7,5,0.5) 18%, rgba(4,7,5,0.46) 80%, rgba(4,7,5,0.94) 100%),
-    linear-gradient(90deg, rgba(4,7,5,0.9) 0%, rgba(4,7,5,0.74) 32%, rgba(4,7,5,0.6) 62%, rgba(4,7,5,0.56) 100%);
+    linear-gradient(180deg, rgba(12,15,13,0.94) 0%, rgba(12,15,13,0.5) 18%, rgba(12,15,13,0.46) 80%, rgba(12,15,13,0.94) 100%),
+    linear-gradient(90deg, rgba(12,15,13,0.9) 0%, rgba(12,15,13,0.74) 32%, rgba(12,15,13,0.6) 62%, rgba(12,15,13,0.56) 100%);
 }
 
 .roadmap {
@@ -972,7 +1001,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   text-transform: uppercase;
   color: var(--muted-2);
   margin: 1.5rem 0 0.7rem;
-  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
+  text-shadow: 0 1px 3px rgba(12,15,13,0.9), 0 2px 16px rgba(12,15,13,0.7);
 }
 .roadmap__phase:first-child { margin-top: 0; }
 
@@ -1005,14 +1034,14 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   color: var(--muted-2);
   flex-shrink: 0;
   transition: color 0.4s var(--ease);
-  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
+  text-shadow: 0 1px 3px rgba(12,15,13,0.9), 0 2px 16px rgba(12,15,13,0.7);
 }
 .step__name {
   font-size: 0.99rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.35;
-  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
+  text-shadow: 0 1px 3px rgba(12,15,13,0.9), 0 2px 16px rgba(12,15,13,0.7);
 }
 .step:hover { color: var(--off-white); background: rgba(255,255,255,0.03); padding-left: 0.6rem; }
 .step:hover .step__node { border-color: var(--off-white); }
@@ -1085,7 +1114,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   text-transform: uppercase;
   color: var(--muted-2);
   margin-bottom: 0.9rem;
-  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 2px 16px rgba(4,7,5,0.7);
+  text-shadow: 0 1px 3px rgba(12,15,13,0.9), 0 2px 16px rgba(12,15,13,0.7);
 }
 .phase__count { color: var(--muted); letter-spacing: 0.14em; }
 .phase__title {
@@ -1094,7 +1123,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   letter-spacing: -0.028em;
   line-height: 1.08;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(4,7,5,0.9), 0 4px 28px rgba(4,7,5,0.75);
+  text-shadow: 0 2px 4px rgba(12,15,13,0.9), 0 4px 28px rgba(12,15,13,0.75);
   font-variation-settings: "opsz" 72;
 }
 .phase__text {
@@ -1103,7 +1132,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   /* Sits directly on moving footage now the panel has no fill of its own,
      so this needs more body than --muted's usual 0.62 alpha to stay legible. */
   color: rgba(226, 240, 232, 0.86);
-  text-shadow: 0 1px 3px rgba(4,7,5,0.9), 0 3px 20px rgba(4,7,5,0.75);
+  text-shadow: 0 1px 3px rgba(12,15,13,0.9), 0 3px 20px rgba(12,15,13,0.75);
   max-width: 54ch;
 }
 .roadmap__nav { display: flex; gap: 0.6rem; margin-top: auto; padding-top: 2rem; }
@@ -1187,8 +1216,8 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   z-index: 2;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(4,7,5,0.38) 0%, rgba(4,7,5,0) 24%),
-    linear-gradient(0deg, rgba(4,7,5,0.88) 0%, rgba(4,7,5,0.6) 16%, rgba(4,7,5,0.22) 34%, rgba(4,7,5,0) 54%);
+    linear-gradient(180deg, rgba(12,15,13,0.38) 0%, rgba(12,15,13,0) 24%),
+    linear-gradient(0deg, rgba(12,15,13,0.88) 0%, rgba(12,15,13,0.6) 16%, rgba(12,15,13,0.22) 34%, rgba(12,15,13,0) 54%);
   transition: opacity 0.6s var(--ease);
 }
 .film__plate {
@@ -1231,7 +1260,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(240, 248, 243, 0.9);
-  background: rgba(4, 7, 5, 0.5);
+  background: rgba(12,15,13, 0.5);
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   padding: 0.3rem 0.7rem;
@@ -1308,7 +1337,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4,7,5,0.1), rgba(4,7,5,0.4));
+  background: linear-gradient(180deg, rgba(12,15,13,0.1), rgba(12,15,13,0.4));
   opacity: 0;
   transition: opacity 0.5s var(--ease);
 }
@@ -1353,7 +1382,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   display: grid; place-items: center;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  background: rgba(4,7,5,0.4);
+  background: rgba(12,15,13,0.4);
   backdrop-filter: blur(8px);
   transition: background 0.4s var(--ease), color 0.4s var(--ease), border-color 0.4s var(--ease);
 }
@@ -1435,7 +1464,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
 .member__media::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(4,7,5,0) 50%, rgba(4,7,5,0.88) 100%);
+  background: linear-gradient(180deg, rgba(12,15,13,0) 50%, rgba(12,15,13,0.88) 100%);
 }
 .member__media::before {
   content: "";
@@ -1459,7 +1488,7 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   color: var(--off-white);
-  background: rgba(4,7,5,0.45);
+  background: rgba(12,15,13,0.45);
   backdrop-filter: blur(8px);
   opacity: 0;
   transform: translateY(12px);
@@ -1532,8 +1561,8 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4,7,5,0.92) 0%, rgba(4,7,5,0.62) 18%, rgba(4,7,5,0.6) 82%, rgba(4,7,5,0.92) 100%),
-    radial-gradient(70% 60% at 50% 45%, rgba(4,7,5,0.34) 0%, rgba(4,7,5,0.62) 100%);
+    linear-gradient(180deg, rgba(12,15,13,0.92) 0%, rgba(12,15,13,0.62) 18%, rgba(12,15,13,0.6) 82%, rgba(12,15,13,0.92) 100%),
+    radial-gradient(70% 60% at 50% 45%, rgba(12,15,13,0.34) 0%, rgba(12,15,13,0.62) 100%);
 }
 
 .contact__head { max-width: 720px; margin: 0 auto clamp(2.2rem, 4vw, 3.2rem); text-align: center; }
@@ -1662,7 +1691,7 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   border-top: 1px solid var(--line);
   position: relative;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(4,7,5,0) 0%, rgba(255, 255, 255, 0.02) 100%);
+  background: linear-gradient(180deg, rgba(12,15,13,0) 0%, rgba(255, 255, 255, 0.02) 100%);
 }
 .footer__top {
   display: flex;
@@ -1729,7 +1758,7 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(60% 70% at 78% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(4, 7, 5, 0) 70%);
+  background: radial-gradient(60% 70% at 78% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(12,15,13, 0) 70%);
 }
 .subhero__inner { position: relative; z-index: 2; }
 .subhero__title {
@@ -1797,10 +1826,10 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   position: absolute; inset: 0;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(4,7,5,0.1) 0%, rgba(4,7,5,0) 40%, rgba(4,7,5,0.55) 100%);
+  background: linear-gradient(90deg, rgba(12,15,13,0.1) 0%, rgba(12,15,13,0) 40%, rgba(12,15,13,0.55) 100%);
 }
 .project:nth-child(even) .project__media::after {
-  background: linear-gradient(270deg, rgba(4,7,5,0.1) 0%, rgba(4,7,5,0) 40%, rgba(4,7,5,0.55) 100%);
+  background: linear-gradient(270deg, rgba(12,15,13,0.1) 0%, rgba(12,15,13,0) 40%, rgba(12,15,13,0.55) 100%);
 }
 .project__dots {
   position: absolute;
@@ -1847,7 +1876,7 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
 .bio__media::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(200deg, rgba(4,7,5,0) 55%, rgba(4,7,5,0.6) 100%);
+  background: linear-gradient(200deg, rgba(12,15,13,0) 55%, rgba(12,15,13,0.6) 100%);
 }
 .bio__media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.92) contrast(1.05) brightness(0.92); }
 .bio__role { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 1rem; }
@@ -1953,10 +1982,26 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   body { font-size: 16px; }
   .nav__links { display: none; }
   .nav__toggle { display: block; }
-  .hero { min-height: 92svh; }
   .about__grid { grid-template-columns: 1fr; }
   .about__media { aspect-ratio: 16 / 11; }
-  .films__grid { grid-template-columns: 1fr; }
+  /* Nine full-width cards stacked was the biggest wall of scroll on the
+     whole site - swipe a single row instead, same fix as the gallery and
+     talent grids. */
+  .films__grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-inline: var(--gutter);
+  }
+  .films__grid::-webkit-scrollbar { display: none; }
+  .films__grid .film {
+    flex: 0 0 auto;
+    width: 82%;
+    scroll-snap-align: start;
+    aspect-ratio: 4 / 3 !important;
+  }
   .gallery__grid { grid-template-columns: repeat(2, 1fr); }
   /* Four tall 4:5 cards stacked was the same wall-of-scroll problem as the
      gallery - swipe a single row instead, same fix as .gallery__grid. */
@@ -1983,25 +2028,14 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   .project:nth-child(even) .project__media { order: -1; }
   .credit { grid-template-columns: 120px 1fr; }
   .footer__top { flex-direction: column; align-items: flex-start; }
-  /* PORTRAIT HERO
-     A 2.39:1 frame covering a 9:19.5 screen shows barely a tenth of its own
-     width, which is what makes a full-bleed mobile hero read as dark and
-     empty. On phones the footage therefore backs the hero alone, at a
-     shorter height: same full-bleed look, roughly twice as much picture.
-     The stats sit on solid ground beneath it. */
-  .hero { min-height: 78svh; }
-  .hero__stage { inset: -60px 0 auto 0; height: calc(78svh + 120px); }
-  .hero__scrim { height: 78svh; }
-  .stats { background: var(--charcoal); }
+  /* FULL-SCREEN HERO
+     Video fills the whole first screen on load, same as desktop, and now
+     also runs behind the stats band below it (no more separate solid-ground
+     panel) so the numbers overlay the footage instead of sitting on
+     charcoal - same stage/scrim behaviour as desktop, just a smaller type
+     scale for the wordmark. */
+  .hero { min-height: 100svh; }
   .hero__title { font-size: clamp(1.8rem, 9vw, 2.4rem); }
-
-  /* Stops are hero-relative again now the block is split */
-  .hero__scrim {
-    background:
-      linear-gradient(180deg, rgba(4,7,5,0.8) 0%, rgba(4,7,5,0.2) 18%, rgba(4,7,5,0) 34%),
-      linear-gradient(0deg, rgba(4,7,5,0.88) 0%, rgba(4,7,5,0.4) 22%, rgba(4,7,5,0) 44%),
-      radial-gradient(85% 42% at 50% 50%, rgba(4,7,5,0.55) 0%, rgba(4,7,5,0.2) 65%, rgba(4,7,5,0) 100%);
-  }
 }
 
 @media (max-width: 520px) {
@@ -2051,6 +2085,17 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
   .footer__bottom { font-size: 0.8rem; }
   .project__yearline { font-size: 0.74rem; }
   .label { font-size: 0.76rem; }
+}
+
+/* Stats stay in one horizontal row on phones instead of stacking, so
+   everything shrinks to fit three columns in the width. Comes after the
+   860px block above so it wins for the sizes both set. */
+@media (max-width: 520px) {
+  .stats__grid { grid-template-columns: repeat(3, 1fr); }
+  .stat { padding: 1.4rem 0.4rem; }
+  .stat__num { font-size: clamp(1.5rem, 7.2vw, 2rem); }
+  .stat__label { font-size: 0.56rem; letter-spacing: 0.1em; }
+  .stat__note { font-size: 0.6rem; margin-top: 0.3rem; }
 }
 
 @media (hover: none), (pointer: coarse) {
