@@ -846,8 +846,8 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
 /* ============================================================================
    About (editorial split)
    ========================================================================== */
-/* Full-bleed photo behind the whole section, same overlay approach as the
-   Hero and Contact sections: image + scrim layer, copy sits on top. */
+/* Full-bleed video behind the whole section, same overlay approach as the
+   Hero and Contact sections: frame + scrim layer, copy sits on top. */
 .about-section {
   position: relative;
   isolation: isolate;

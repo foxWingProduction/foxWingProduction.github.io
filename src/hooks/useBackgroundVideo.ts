@@ -5,8 +5,10 @@ import { prefersReducedMotion } from './useMediaPrefs';
  * Muted YouTube loop behind a full-width section, loaded only when the section
  * nears the viewport so visitors who never scroll there pay nothing for it.
  *
- * Skipped on small screens: YouTube keeps its own centred touch controls
- * visible there, and a decorative background loop is not worth the data.
+ * Skipped on small screens by default: YouTube keeps its own centred touch
+ * controls visible there, and a decorative background loop is not worth the
+ * data. Pass `desktopOnly: false` for a section where the clip is the main
+ * visual (nothing else fills the background), so mobile isn't left blank.
  */
 export function useBackgroundVideo(
   sectionRef: RefObject<HTMLElement | null>,
@@ -17,13 +19,14 @@ export function useBackgroundVideo(
    *  start-up overlay first. Pass 0 for a section that should cut in
    *  the instant the frame loads. */
   readyDelay = 2200,
+  desktopOnly = true,
 ): void {
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
     const frame = section.querySelector<HTMLIFrameElement>(frameSelector);
     if (!frame || !youtubeId) return;
-    if (!window.matchMedia('(min-width: 861px)').matches || prefersReducedMotion()) return;
+    if ((desktopOnly && !window.matchMedia('(min-width: 861px)').matches) || prefersReducedMotion()) return;
 
     let timer = 0;
     const onLoad = () => {
@@ -51,5 +54,5 @@ export function useBackgroundVideo(
       frame.removeEventListener('load', onLoad);
       section.classList.remove('video-ready');
     };
-  }, [sectionRef, frameSelector, youtubeId, start, readyDelay]);
+  }, [sectionRef, frameSelector, youtubeId, start, readyDelay, desktopOnly]);
 }
