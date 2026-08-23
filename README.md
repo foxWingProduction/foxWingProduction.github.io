@@ -1,6 +1,6 @@
 # FoxWing Productions Website
 
-Marketing site for [FoxWing Productions](https://foxwingproductions.com), a
+Site for [FoxWing Productions](https://foxwingproductions.com), a
 Toronto-based film production company.
 
 React + TypeScript, built with Vite and prerendered to static HTML, deployed to
