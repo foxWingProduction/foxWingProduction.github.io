@@ -1,21 +1,26 @@
 name: Deploy to GitHub Pages
 
+# Pages is stuck on the legacy "deploy from a branch" source (main, /) and
+# nobody with admin rights has flipped it to the GitHub Actions source, so
+# this workflow builds on every push to Foxing-Revamp and pushes the built
+# dist/ output straight into main's root - legacy Pages just serves whatever
+# is there. main is now a pure build artifact: don't push source to it or
+# hand-edit it, work happens on Foxing-Revamp only.
+
 on:
   push:
-    branches: [main]
+    branches: [Foxing-Revamp]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,16 +30,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: main
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
