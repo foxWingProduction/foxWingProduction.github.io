@@ -860,14 +860,18 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   background: var(--charcoal);
 }
 .about__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-/* Shown until the video takes over; stays put on mobile, where the clip
-   is skipped entirely (see useBackgroundVideo's desktopOnly default). */
+/* A frame grabbed from the clip itself at its start timestamp, so the
+   crossfade into video reads as a continuation rather than a cut. Shown
+   until the video takes over; stays put on mobile, where the clip is
+   skipped entirely (see useBackgroundVideo's desktopOnly default). */
 .about__poster {
   position: absolute;
   inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: saturate(0.85) contrast(1.06) brightness(0.55);
+  /* Matches .about__frame's left: 35% crop bias. */
+  object-position: 70% 50%;
+  filter: brightness(1.45) contrast(1.1) saturate(1);
 }
 .about__frame {
   max-width: none;

@@ -10,11 +10,7 @@ export function About() {
   return (
     <section className="section about-section" id="about" ref={ref}>
       <div className="about__bg" aria-hidden="true">
-        <img
-          className="about__poster"
-          src="/images/studio/on-set.jpg"
-          alt="FoxWing Productions founders at work behind the camera"
-        />
+        <img className="about__poster" src="/images/studio/about-video-poster.jpg" alt="" />
         <iframe
           className="about__frame"
           title=""
