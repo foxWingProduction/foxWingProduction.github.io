@@ -5,11 +5,16 @@ import { videos } from '@/data/site';
 
 export function About() {
   const ref = useRef<HTMLElement>(null);
-  useBackgroundVideo(ref, '.about__frame', videos.roadmap.youtubeId, videos.roadmap.start, 0, false);
+  useBackgroundVideo(ref, '.about__frame', videos.roadmap.youtubeId, videos.roadmap.start, 7000);
 
   return (
     <section className="section about-section" id="about" ref={ref}>
       <div className="about__bg" aria-hidden="true">
+        <img
+          className="about__poster"
+          src="/images/studio/on-set.jpg"
+          alt="FoxWing Productions founders at work behind the camera"
+        />
         <iframe
           className="about__frame"
           title=""

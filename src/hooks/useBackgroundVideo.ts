@@ -6,18 +6,21 @@ import { prefersReducedMotion } from './useMediaPrefs';
  * nears the viewport so visitors who never scroll there pay nothing for it.
  *
  * Skipped on small screens by default: YouTube keeps its own centred touch
- * controls visible there, and a decorative background loop is not worth the
- * data. Pass `desktopOnly: false` for a section where the clip is the main
- * visual (nothing else fills the background), so mobile isn't left blank.
+ * controls visible there no matter what the URL params say, so a
+ * `desktopOnly: false` override just swaps a blank mobile background for a
+ * visible play/pause/skip overlay. Give the section a poster image instead
+ * (see About) rather than disabling this flag.
  */
 export function useBackgroundVideo(
   sectionRef: RefObject<HTMLElement | null>,
   frameSelector: string,
   youtubeId: string,
   start: number,
-  /** Delay before the fade-in reveal, so the player can clear its own
-   *  start-up overlay first. Pass 0 for a section that should cut in
-   *  the instant the frame loads. */
+  /** Delay before the fade-in reveal. The iframe's `load` event fires as
+   *  soon as the embed document arrives, well before the player has
+   *  actually started autoplaying - revealing at 0 risks exposing its own
+   *  pre-play overlay (with playlist mode on, that includes prev/next
+   *  arrows). Keep some buffer; only drop it if that flash is acceptable. */
   readyDelay = 2200,
   desktopOnly = true,
 ): void {
