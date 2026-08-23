@@ -8,7 +8,7 @@ export const films: Film[] = [
     "title": "Return To Sender",
     "year": "2025",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"
@@ -142,7 +142,7 @@ export const films: Film[] = [
     "title": "Rooted Remedy",
     "year": "2024",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"
@@ -191,7 +191,7 @@ export const films: Film[] = [
     "title": "Ava",
     "year": "2024",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"
@@ -240,7 +240,7 @@ export const films: Film[] = [
     "title": "First Fan",
     "year": "2023",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"
@@ -342,7 +342,7 @@ export const films: Film[] = [
     "title": "Daddy-O",
     "year": "2023",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"
@@ -403,7 +403,7 @@ export const films: Film[] = [
     "title": "I'm Only Visiting",
     "year": "2023",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"
@@ -456,7 +456,7 @@ export const films: Film[] = [
     "title": "DELIVERY",
     "year": "2023",
     "genreLabels": [
-      "Film"
+      "Narrative"
     ],
     "genres": [
       "film"

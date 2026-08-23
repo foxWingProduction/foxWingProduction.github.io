@@ -8,7 +8,7 @@ import { useScrollEngine } from '@/hooks/useScrollEngine';
 
 const GENRES = [
   { key: 'all', label: 'All' },
-  { key: 'film', label: 'Film' },
+  { key: 'film', label: 'Narrative' },
   { key: 'music', label: 'Music Video' },
 ];
 
@@ -28,8 +28,8 @@ export default function Films() {
             filmography.
           </h1>
           <p className="subhero__sub reveal in">
-            A selection of our film and music video work, each carried from first myth to
-            final picture.
+            A selection of our productions, each carried from myth of the mind to final
+            picture.
           </p>
 
           <div className="filters reveal in" role="tablist" aria-label="Filter films by genre">
