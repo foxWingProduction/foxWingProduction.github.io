@@ -21,7 +21,7 @@ export default function Films() {
     <Layout condensed variant="inner" activeLabel="Films">
       <section className="subhero">
         <div className="container subhero__inner">
-          <p className="eyebrow reveal in">Selected work &middot; 2023-2025</p>
+          <p className="eyebrow reveal in">Selected work &middot; 2023-2026</p>
           <h1 className="subhero__title reveal in">
             The <em className="green-text">FoxWing</em>
             <br />

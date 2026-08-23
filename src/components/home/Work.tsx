@@ -15,7 +15,7 @@ export function Work() {
       <div className="container">
         <div className="films__head">
           <div>
-            <p className="eyebrow reveal">Selected work</p>
+            <p className="eyebrow reveal">Selected work &middot; 2023-2026</p>
             <SplitText as="h2" className="section-title">
               The films we've <em>brought to life</em>.
             </SplitText>
