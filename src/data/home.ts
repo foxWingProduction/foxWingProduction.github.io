@@ -20,11 +20,11 @@ export const stats: Stat[] = [
     "count": 22,
     "pad": false,
     "suffix": "",
-    "label": "Films Released",
+    "label": "Projects Released",
     "note": "Selected work on the films page"
   },
   {
-    "count": 50,
+    "count": 150,
     "pad": false,
     "suffix": "+",
     "label": "Cast & Crew",

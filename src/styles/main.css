@@ -1506,16 +1506,6 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   background: var(--charcoal);
 }
 .contact__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-/* Shown immediately so the section never shows bare charcoal while the clip
-   loads - see .roadmap__poster for the same pattern. */
-.contact__poster {
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 100%; height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  filter: brightness(1.1) saturate(0.95);
-}
 .contact__frame {
   max-width: none;
   position: absolute;
@@ -1532,7 +1522,6 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   transition: opacity 1.4s var(--ease);
 }
 .contact-section.video-ready .contact__frame { opacity: 1; }
-.contact-section.video-ready .contact__poster { opacity: 0; transition: opacity 1.4s var(--ease) 0.3s; }
 .contact__scrim {
   position: absolute;
   inset: 0;
