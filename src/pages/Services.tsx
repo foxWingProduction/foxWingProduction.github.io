@@ -65,15 +65,7 @@ export default function Services() {
 
   return (
     <Layout condensed variant="inner" activeLabel="Services">
-      <section className="subhero subhero--media">
-        <div className="subhero__bg" aria-hidden="true">
-          <img
-            className="subhero__frame"
-            src="/images/studio/on-set.jpg"
-            alt=""
-          />
-          <span className="subhero__scrim" />
-        </div>
+      <section className="subhero">
         <div className="container subhero__inner">
           <p className="eyebrow reveal in">What we do</p>
           <h1 className="subhero__title reveal in">
@@ -89,6 +81,10 @@ export default function Services() {
       </section>
 
       <section className="section roadmap-section">
+        <div className="roadmap__bg" aria-hidden="true">
+          <img className="roadmap__frame" src="/images/studio/on-set.jpg" alt="" />
+          <span className="roadmap__scrim" />
+        </div>
         <div className="container">
           <div className="roadmap reveal" data-delay="1">
             <div className="roadmap__rail">

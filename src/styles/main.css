@@ -914,6 +914,21 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   overflow: hidden;
   background: var(--charcoal-3);
 }
+.roadmap__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.roadmap__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85) contrast(1.06) brightness(0.5);
+}
+.roadmap__scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(12,15,13,0.55) 0%, rgba(12,15,13,0.75) 40%, rgba(12,15,13,0.9) 100%),
+    linear-gradient(90deg, rgba(12,15,13,0.7) 0%, rgba(12,15,13,0.3) 55%, rgba(12,15,13,0.14) 100%);
+}
 .roadmap {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -1709,29 +1724,6 @@ a.contact__card:hover .ic { background: var(--white); color: var(--black-deep); 
 }
 .subhero__title em { font-style: italic; font-weight: 400; }
 .subhero__sub { margin-top: 1.6rem; max-width: 52ch; color: var(--muted); }
-
-/* A subhero carrying a photo behind its copy, e.g. Services. */
-.subhero__bg { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
-.subhero__frame {
-  position: absolute;
-  inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  filter: saturate(0.85) contrast(1.06) brightness(0.55);
-}
-.subhero__scrim {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(12,15,13,0.5) 0%, rgba(12,15,13,0.75) 65%, rgba(12,15,13,0.96) 100%),
-    linear-gradient(90deg, rgba(12,15,13,0.72) 0%, rgba(12,15,13,0.22) 55%, rgba(12,15,13,0.08) 100%);
-}
-.subhero--media .eyebrow,
-.subhero--media .subhero__sub {
-  text-shadow: 0 1px 3px rgba(12,15,13,0.9), 0 3px 20px rgba(12,15,13,0.75);
-}
-.subhero--media .subhero__sub { color: rgba(226, 240, 232, 0.86); }
-.subhero--media .subhero__title { text-shadow: 0 2px 4px rgba(12,15,13,0.9), 0 4px 28px rgba(12,15,13,0.75); }
 
 /* Filters */
 .filters { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: clamp(2rem, 4vw, 3rem); }
