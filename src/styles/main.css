@@ -863,7 +863,9 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
 .about__frame {
   max-width: none;
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  /* Shifted left of centre so the crop favours the right side of the frame. */
+  left: 35%;
   width: 100vw;
   height: 56.25vw;
   min-height: 100%;
