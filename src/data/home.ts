@@ -45,133 +45,89 @@ export interface FilmCard {
   alt: string;
 }
 
-/** The selected-work mosaic, newest first. Tile sizes must sum to 12 per row (no grid-auto-flow: dense). */
+/** The selected-work mosaic, oldest first. Tile sizes must sum to 12 per row (no grid-auto-flow: dense). */
 export const filmCards: FilmCard[] = [
   {
     "size": "wide",
     "href": "filmography",
-    "title": "Return To Sender",
-    "filmSlug": "return-to-sender",
-    "tags": [
-      "Film"
-    ],
-    "year": "2025",
-    "stills": [
-      {
-        "src": "/images/films/return-to-sender/still-1.jpg",
-        "scope": false
-      },
-      {
-        "src": "/images/films/return-to-sender/still-2.jpg",
-        "scope": false
-      },
-      {
-        "src": "/images/films/return-to-sender/still-3.jpg",
-        "scope": false
-      }
-    ],
-    "delay": null,
-    "alt": "Still from Return To Sender"
-  },
-  {
-    "size": "tall",
-    "href": "filmography",
-    "title": "Insomnia",
-    "filmSlug": "insomnia",
-    "tags": [
-      "Music Video"
-    ],
-    "year": "2025",
-    "stills": [
-      {
-        "src": "/images/films/insomnia/still-1.png",
-        "scope": false
-      },
-      {
-        "src": "/images/films/insomnia/still-2.png",
-        "scope": false
-      }
-    ],
-    "delay": 1,
-    "alt": "Still from the Insomnia music video"
-  },
-  {
-    "size": "half",
-    "href": "filmography",
-    "title": "Rooted Remedy",
-    "filmSlug": "rooted-remedy",
-    "tags": [
-      "Film"
-    ],
-    "year": "2024",
-    "stills": [
-      {
-        "src": "/images/films/rooted-remedy/still-1.jpg",
-        "scope": false
-      },
-      {
-        "src": "/images/films/rooted-remedy/still-2.jpg",
-        "scope": false
-      },
-      {
-        "src": "/images/films/rooted-remedy/still-3.jpg",
-        "scope": false
-      }
-    ],
-    "delay": null,
-    "alt": "Still from Rooted Remedy"
-  },
-  {
-    "size": "half",
-    "href": "filmography",
-    "title": "Ava",
-    "filmSlug": "ava",
-    "tags": [
-      "Film"
-    ],
-    "year": "2024",
-    "stills": [
-      {
-        "src": "/images/films/ava/still-1.jpg",
-        "scope": false
-      },
-      {
-        "src": "/images/films/ava/still-2.jpg",
-        "scope": false
-      },
-      {
-        "src": "/images/films/ava/still-3.jpg",
-        "scope": false
-      }
-    ],
-    "delay": 1,
-    "alt": "Still from Ava"
-  },
-  {
-    "size": "third",
-    "href": "filmography",
-    "title": "First Fan",
-    "filmSlug": "first-fan",
+    "title": "DELIVERY",
+    "filmSlug": "delivery",
     "tags": [
       "Film"
     ],
     "year": "2023",
     "stills": [
       {
-        "src": "/images/films/first-fan/still-1.jpg",
+        "src": "/images/films/delivery/still-1.png",
         "scope": false
       },
       {
-        "src": "/images/films/first-fan/still-2.jpg",
+        "src": "/images/films/delivery/still-2.png",
         "scope": false
       },
       {
-        "src": "/images/films/first-fan/still-3.jpg",
+        "src": "/images/films/delivery/still-3.png",
+        "scope": false
+      },
+      {
+        "src": "/images/films/delivery/still-4.png",
         "scope": false
       }
     ],
     "delay": null,
-    "alt": "Still from First Fan"
+    "alt": "Still from DELIVERY"
+  },
+  {
+    "size": "tall",
+    "href": "filmography",
+    "title": "I'm Only Visiting",
+    "filmSlug": "im-only-visiting",
+    "tags": [
+      "Film"
+    ],
+    "year": "2023",
+    "stills": [
+      {
+        "src": "/images/films/im-only-visiting/still-1.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/im-only-visiting/still-2.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/im-only-visiting/still-3.jpg",
+        "scope": true
+      }
+    ],
+    "delay": 1,
+    "alt": "Still from I'm Only Visiting"
+  },
+  {
+    "size": "third",
+    "href": "filmography",
+    "title": "Daddy-O",
+    "filmSlug": "daddy-o",
+    "tags": [
+      "Film"
+    ],
+    "year": "2023",
+    "stills": [
+      {
+        "src": "/images/films/daddy-o/still-1.png",
+        "scope": false
+      },
+      {
+        "src": "/images/films/daddy-o/still-2.png",
+        "scope": false
+      },
+      {
+        "src": "/images/films/daddy-o/still-3.png",
+        "scope": false
+      }
+    ],
+    "delay": null,
+    "alt": "Still from Daddy-O"
   },
   {
     "size": "third",
@@ -202,84 +158,80 @@ export const filmCards: FilmCard[] = [
   {
     "size": "third",
     "href": "filmography",
-    "title": "Daddy-O",
-    "filmSlug": "daddy-o",
+    "title": "First Fan",
+    "filmSlug": "first-fan",
     "tags": [
       "Film"
     ],
     "year": "2023",
     "stills": [
       {
-        "src": "/images/films/daddy-o/still-1.png",
+        "src": "/images/films/first-fan/still-1.jpg",
         "scope": false
       },
       {
-        "src": "/images/films/daddy-o/still-2.png",
+        "src": "/images/films/first-fan/still-2.jpg",
         "scope": false
       },
       {
-        "src": "/images/films/daddy-o/still-3.png",
+        "src": "/images/films/first-fan/still-3.jpg",
         "scope": false
       }
     ],
     "delay": 2,
-    "alt": "Still from Daddy-O"
+    "alt": "Still from First Fan"
   },
   {
-    "size": "tall",
+    "size": "half",
     "href": "filmography",
-    "title": "I'm Only Visiting",
-    "filmSlug": "im-only-visiting",
+    "title": "Ava",
+    "filmSlug": "ava",
     "tags": [
       "Film"
     ],
-    "year": "2023",
+    "year": "2024",
     "stills": [
       {
-        "src": "/images/films/im-only-visiting/still-1.jpg",
-        "scope": true
+        "src": "/images/films/ava/still-1.jpg",
+        "scope": false
       },
       {
-        "src": "/images/films/im-only-visiting/still-2.jpg",
-        "scope": true
+        "src": "/images/films/ava/still-2.jpg",
+        "scope": false
       },
       {
-        "src": "/images/films/im-only-visiting/still-3.jpg",
-        "scope": true
+        "src": "/images/films/ava/still-3.jpg",
+        "scope": false
       }
     ],
     "delay": null,
-    "alt": "Still from I'm Only Visiting"
+    "alt": "Still from Ava"
   },
   {
-    "size": "wide",
+    "size": "half",
     "href": "filmography",
-    "title": "DELIVERY",
-    "filmSlug": "delivery",
+    "title": "Rooted Remedy",
+    "filmSlug": "rooted-remedy",
     "tags": [
       "Film"
     ],
-    "year": "2023",
+    "year": "2024",
     "stills": [
       {
-        "src": "/images/films/delivery/still-1.png",
+        "src": "/images/films/rooted-remedy/still-1.jpg",
         "scope": false
       },
       {
-        "src": "/images/films/delivery/still-2.png",
+        "src": "/images/films/rooted-remedy/still-2.jpg",
         "scope": false
       },
       {
-        "src": "/images/films/delivery/still-3.png",
-        "scope": false
-      },
-      {
-        "src": "/images/films/delivery/still-4.png",
+        "src": "/images/films/rooted-remedy/still-3.jpg",
         "scope": false
       }
     ],
     "delay": 1,
-    "alt": "Still from DELIVERY"
+    "alt": "Still from Rooted Remedy"
   }
 ];
 

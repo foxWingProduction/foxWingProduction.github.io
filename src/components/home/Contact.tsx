@@ -41,7 +41,7 @@ export function Contact() {
         <form
           className="form reveal"
           data-delay="2"
-          action={`mailto:${site.email}`}
+          action="mailto:rosa@foxwingproductions.com"
           method="post"
           encType="text/plain"
         >

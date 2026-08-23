@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type MouseEvent, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { innerNavLinks, navLinks } from '@/data/site';
+import { prefersReducedMotion } from '@/hooks/useMediaPrefs';
 
 interface NavProps {
   /** Home starts transparent; inner pages start in the condensed state. */
@@ -11,6 +12,51 @@ interface NavProps {
   variant?: 'home' | 'inner';
   /** Label of the inner-nav link to mark active, e.g. "Films" or "Team". */
   activeLabel?: string;
+}
+
+/**
+ * A `/#section` link. On the home page it's a same-page scroll only - the
+ * URL never changes, so scrolling past a section doesn't leave the address
+ * bar out of sync with what's on screen. From any other page it's a real
+ * route change to "/" (via ScrollManager's `state.scrollTo`), since that
+ * genuinely is navigating to a different page.
+ */
+function SectionLink({
+  href,
+  variant,
+  className,
+  onNavigate,
+  children,
+}: {
+  href: string;
+  variant: 'home' | 'inner';
+  className?: string;
+  onNavigate?: () => void;
+  children: ReactNode;
+}) {
+  const id = href.slice(2);
+
+  if (variant === 'home') {
+    const onClick = (e: MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      document.getElementById(id)?.scrollIntoView({
+        behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+        block: 'start',
+      });
+      onNavigate?.();
+    };
+    return (
+      <a href={href} className={className} onClick={onClick}>
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link to="/" state={{ scrollTo: id }} className={className} onClick={onNavigate}>
+      {children}
+    </Link>
+  );
 }
 
 export function Nav({
@@ -71,13 +117,14 @@ export function Nav({
           <nav className="nav__links" aria-label="Primary">
             {links.map((l) =>
               l.href.startsWith('/#') ? (
-                <a
+                <SectionLink
                   key={l.href}
-                  className={`nav__link${isActive(l) ? ' active' : ''}`}
                   href={l.href}
+                  variant={variant}
+                  className={`nav__link${isActive(l) ? ' active' : ''}`}
                 >
                   {l.label}
-                </a>
+                </SectionLink>
               ) : (
                 <Link
                   key={l.href}
@@ -88,10 +135,10 @@ export function Nav({
                 </Link>
               ),
             )}
-            <a className="btn btn--cta nav__cta" href="/#contact">
+            <SectionLink href="/#contact" variant={variant} className="btn btn--cta nav__cta">
               <span className="dot" />
               Work with Us
-            </a>
+            </SectionLink>
           </nav>
           <button
             className="nav__toggle"
@@ -111,10 +158,15 @@ export function Nav({
         {[...links, { label: 'Contact', href: '/#contact' }].map((l, i) => {
           const idx = <span className="idx">{String(i + 1).padStart(2, '0')}</span>;
           return l.href.startsWith('/#') ? (
-            <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}>
+            <SectionLink
+              key={l.href}
+              href={l.href}
+              variant={variant}
+              onNavigate={() => setMenuOpen(false)}
+            >
               {idx}
               {l.label}
-            </a>
+            </SectionLink>
           ) : (
             <Link key={l.href} to={l.href} onClick={() => setMenuOpen(false)}>
               {idx}

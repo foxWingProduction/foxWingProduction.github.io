@@ -11,7 +11,7 @@ const ArrowOut = () => (
 /** The selected-work mosaic. Hover cycling is wired by useFilmPreviews. */
 export function Work() {
   return (
-    <section className="section section--lit section--close-bottom" id="work">
+    <section className="section section--close-top section--close-bottom" id="work">
       <div className="container">
         <div className="films__head">
           <div>
@@ -29,8 +29,9 @@ export function Work() {
             </Link>
           </div>
         </div>
+      </div>
 
-        <div className="films__grid">
+      <div className="films__grid">
           {filmCards.map((card) => (
             <Link
               key={card.title}
@@ -77,7 +78,6 @@ export function Work() {
               </span>
             </Link>
           ))}
-        </div>
       </div>
     </section>
   );

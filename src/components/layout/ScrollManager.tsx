@@ -57,8 +57,9 @@ const toElement = (selector: string, onDone: () => void) =>
  * Decides where a navigation lands:
  *
  *  - back / forward  -> exactly where that page was left
- *  - `state.scrollTo` -> the film record a work-grid card points at
- *  - a `#hash`        -> that section
+ *  - `state.scrollTo` -> a section id (nav, from another page) or film slug
+ *                        (a work-grid card) - either way, no hash involved
+ *  - a `#hash`        -> that section (deep links / shared URLs)
  *  - anything else    -> the top
  *
  * Mounted once at the router root so it survives page changes and can record
@@ -146,7 +147,10 @@ export function ScrollManager() {
       }
     }
     if (target) {
-      toElement(`[data-film="${CSS.escape(target)}"]`, done);
+      // Covers both uses of state.scrollTo: a section id from the nav
+      // (e.g. "about") and a film slug from a work-grid card.
+      const escaped = CSS.escape(target);
+      toElement(`#${escaped}, [data-film="${escaped}"]`, done);
       return;
     }
     if (location.hash) {

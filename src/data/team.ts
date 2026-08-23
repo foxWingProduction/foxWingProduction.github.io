@@ -15,28 +15,7 @@ export const team: TeamMember[] = [
     ],
     "photo": "/images/team/fullsize/rosa-riad.jpg",
     "hidden": true,
-    "socials": [
-      {
-        "href": "https://www.facebook.com/rosa.riad.33",
-        "label": "Facebook",
-        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.3C16.7.2 15.8 0 14.7 0 12.3 0 10.8 1.5 10.8 4.1V6H8v3h2.8v8h3.2V9z\"/></svg>"
-      },
-      {
-        "href": "https://www.imdb.com/name/nm11414430",
-        "label": "IMDb",
-        "svg": "<span class=\"imdb-mark\">IMDb</span>"
-      },
-      {
-        "href": "https://www.linkedin.com/in/rosa-riad-625a04182/",
-        "label": "LinkedIn",
-        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z\"/></svg>"
-      },
-      {
-        "href": "mailto:rosa@foxwingproductions.com",
-        "label": "Email",
-        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"4.5\" width=\"19\" height=\"15\" rx=\"2\"/><path d=\"m3 6 9 7 9-7\"/></svg>"
-      }
-    ],
+    "socials": [],
     "prose": [
       {
         "dropcap": true,
