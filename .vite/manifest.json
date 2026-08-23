@@ -1,6 +1,6 @@
 {
-  "_client-DpTCjOae.js": {
-    "file": "assets/client-DpTCjOae.js",
+  "_client-DLCHViom.js": {
+    "file": "assets/client-DLCHViom.js",
     "name": "client",
     "isDynamicEntry": true,
     "imports": [
@@ -8,13 +8,13 @@
     ]
   },
   "index.html": {
-    "file": "assets/app-AzO3z2Z4.js",
+    "file": "assets/app-BEr4nHbx.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
-      "_client-DpTCjOae.js",
-      "_client-DpTCjOae.js"
+      "_client-DLCHViom.js",
+      "_client-DLCHViom.js"
     ],
     "css": [
       "assets/app-DCKctuyM.css"
