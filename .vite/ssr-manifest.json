@@ -1,0 +1,107 @@
+{
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/invariant/browser.js?commonjs-es-import": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/prop-types/index.js?commonjs-es-import": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/prop-types/index.js?commonjs-module": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-dom/cjs/react-dom-client.production.js?commonjs-exports": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-dom/cjs/react-dom.production.js?commonjs-exports": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-dom/client.js?commonjs-es-import": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-dom/client.js?commonjs-module": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-dom/index.js?commonjs-es-import": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-dom/index.js?commonjs-module": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react-fast-compare/index.js?commonjs-es-import": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react/cjs/react-jsx-runtime.production.js?commonjs-exports": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react/cjs/react.production.js?commonjs-exports": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react/index.js?commonjs-es-import": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react/index.js?commonjs-module": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react/jsx-runtime.js?commonjs-es-import": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/react/jsx-runtime.js?commonjs-module": [],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/scheduler/cjs/scheduler.production.js?commonjs-exports": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/scheduler/index.js?commonjs-module": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "\u0000/home/runner/work/foxWingProduction.github.io/foxWingProduction.github.io/node_modules/shallowequal/index.js?commonjs-es-import": [],
+  "\u0000commonjsHelpers.js": [],
+  "\u0000vite/modulepreload-polyfill.js": [],
+  "\u0000vite/preload-helper.js": [],
+  "index.html": [],
+  "node_modules/@remix-run/router/dist/router.js": [],
+  "node_modules/invariant/browser.js": [],
+  "node_modules/prop-types/factoryWithThrowingShims.js": [],
+  "node_modules/prop-types/index.js": [],
+  "node_modules/prop-types/lib/ReactPropTypesSecret.js": [],
+  "node_modules/react-dom/cjs/react-dom-client.production.js": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "node_modules/react-dom/cjs/react-dom.production.js": [],
+  "node_modules/react-dom/client.js": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "node_modules/react-dom/index.js": [],
+  "node_modules/react-fast-compare/index.js": [],
+  "node_modules/react-router-dom/dist/index.js": [],
+  "node_modules/react-router/dist/index.js": [],
+  "node_modules/react/cjs/react-jsx-runtime.production.js": [],
+  "node_modules/react/cjs/react.production.js": [],
+  "node_modules/react/index.js": [],
+  "node_modules/react/jsx-runtime.js": [],
+  "node_modules/scheduler/cjs/scheduler.production.js": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "node_modules/scheduler/index.js": [
+    "/assets/client-BfhfQnTs.js"
+  ],
+  "node_modules/shallowequal/index.js": [],
+  "node_modules/vite-react-ssg/dist/index.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.BhGKpaqQ.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C1RTs5UA.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CoMLbIiW.mjs": [],
+  "node_modules/vite-react-ssg/node_modules/react-helmet-async/lib/index.module.js": [],
+  "src/components/films/FilmRecord.tsx": [],
+  "src/components/home/About.tsx": [],
+  "src/components/home/Contact.tsx": [],
+  "src/components/home/Gallery.tsx": [],
+  "src/components/home/Roadmap.tsx": [],
+  "src/components/home/Showreel.tsx": [],
+  "src/components/home/Team.tsx": [],
+  "src/components/home/Work.tsx": [],
+  "src/components/layout/Footer.tsx": [],
+  "src/components/layout/Layout.tsx": [],
+  "src/components/layout/Nav.tsx": [],
+  "src/components/layout/Root.tsx": [],
+  "src/components/layout/ScrollManager.tsx": [],
+  "src/components/layout/Seo.tsx": [],
+  "src/components/layout/SiteChrome.tsx": [],
+  "src/components/ui/Icon.tsx": [],
+  "src/components/ui/Lightbox.tsx": [],
+  "src/components/ui/SplitText.tsx": [],
+  "src/data/films.ts": [],
+  "src/data/home.ts": [],
+  "src/data/roadmap.ts": [],
+  "src/data/site.ts": [],
+  "src/data/team.ts": [],
+  "src/hooks/useBackgroundVideo.ts": [],
+  "src/hooks/useCounters.ts": [],
+  "src/hooks/useCursor.ts": [],
+  "src/hooks/useFilmPreviews.ts": [],
+  "src/hooks/useMagnetic.ts": [],
+  "src/hooks/useMediaPrefs.ts": [],
+  "src/hooks/usePreloader.ts": [],
+  "src/hooks/useReveal.ts": [],
+  "src/hooks/useScrollEngine.ts": [],
+  "src/hooks/useScrollspy.ts": [],
+  "src/hooks/useVimeoBackground.ts": [],
+  "src/main.tsx": [],
+  "src/pages/Bio.tsx": [],
+  "src/pages/Films.tsx": [],
+  "src/pages/Home.tsx": [],
+  "src/routes.tsx": [],
+  "src/styles/main.css": []
+}

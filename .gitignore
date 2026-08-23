@@ -1,7 +1,0 @@
-node_modules/
-.claude/
-dist/
-.oldsite/
-*.local
-.DS_Store
-npm-debug.log*

@@ -1,0 +1,23 @@
+{
+  "_client-BfhfQnTs.js": {
+    "file": "assets/client-BfhfQnTs.js",
+    "name": "client",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "file": "assets/app-BylOxWpm.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "_client-BfhfQnTs.js",
+      "_client-BfhfQnTs.js"
+    ],
+    "css": [
+      "assets/app-DTtYLosq.css"
+    ]
+  }
+}
