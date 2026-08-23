@@ -1,7 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { Showreel } from '@/components/home/Showreel';
 import { About } from '@/components/home/About';
-import { Roadmap } from '@/components/home/Roadmap';
 import { Work } from '@/components/home/Work';
 import { Gallery } from '@/components/home/Gallery';
 import { Team } from '@/components/home/Team';
@@ -31,7 +30,6 @@ export default function Home() {
     <Layout showPreloader preloaderReleased={released} activeSection={active}>
       <Showreel onReelReady={onReelReady} />
       <About />
-      <Roadmap />
       <Work />
       <Gallery />
       <Team />

@@ -1,14 +1,21 @@
+import { useRef } from 'react';
 import { SplitText } from '@/components/ui/SplitText';
+import { useBackgroundVideo } from '@/hooks/useBackgroundVideo';
+import { videos } from '@/data/site';
 
 export function About() {
+  const ref = useRef<HTMLElement>(null);
+  useBackgroundVideo(ref, '.about__frame', videos.roadmap.youtubeId, videos.roadmap.start);
+
   return (
-    <section className="section about-section" id="about">
+    <section className="section about-section" id="about" ref={ref}>
       <div className="about__bg" aria-hidden="true">
-        <img
+        <iframe
           className="about__frame"
-          src="/images/studio/on-set.jpg"
-          alt="FoxWing Productions founders at work behind the camera"
-          data-parallax="-0.08"
+          title=""
+          tabIndex={-1}
+          aria-hidden="true"
+          allow="autoplay; encrypted-media"
         />
         <span className="about__scrim" />
       </div>

@@ -859,15 +859,24 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   padding-bottom: clamp(3rem, 9vh, 6rem);
   background: var(--charcoal);
 }
-.about__bg { position: absolute; inset: -40px 0; z-index: -1; overflow: hidden; }
+.about__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .about__frame {
+  max-width: none;
   position: absolute;
-  inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  filter: saturate(0.85) contrast(1.06) brightness(0.8);
-  will-change: transform;
+  top: 50%; left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: calc(100vh * 1.7778);
+  transform: translate(-50%, -50%) scale(1.45);
+  border: 0;
+  pointer-events: none;
+  opacity: 0;
+  /* This clip is graded very dark (~10% luminance), so it is lifted hard. */
+  filter: brightness(1.45) contrast(1.1) saturate(1);
+  transition: opacity 1.6s var(--ease);
 }
+.about-section.video-ready .about__frame { opacity: 1; }
 .about__scrim {
   position: absolute;
   inset: 0;
@@ -904,44 +913,6 @@ body:has(.showreel).loaded .nav { animation: navIn 0.9s var(--ease-out) 4s forwa
   overflow: hidden;
   background: var(--charcoal-3);
 }
-.roadmap__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-.roadmap__poster { filter: brightness(1.25) contrast(1.08) saturate(1); }
-.roadmap__poster,
-.roadmap__frame {
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 100%; height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  border: 0;
-}
-/* Oversized so YouTube's own chrome falls outside the visible area */
-.roadmap__frame {
-  /* This clip is graded very dark (~10% luminance), so it is lifted hard.
-     The contrast bump keeps the blacks from flattening into grey. */
-  filter: brightness(1.45) contrast(1.1) saturate(1);
-  width: 100vw;
-  height: 56.25vw;
-  min-height: 100%;
-  min-width: calc(100vh * 1.7778);
-  transform: translate(-50%, -50%) scale(1.45);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 1.6s var(--ease);
-}
-.roadmap-section.video-ready .roadmap__frame { opacity: 1; }
-.roadmap-section.video-ready .roadmap__poster { opacity: 0; transition: opacity 1.4s var(--ease) 0.3s; }
-/* Enough scrim for the copy to win, but the footage still has to read as
-   moving picture. Neither column carries its own card fill, so both sides
-   lean on this scrim for legibility. */
-.roadmap__scrim {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(12,15,13,0.7) 0%, rgba(12,15,13,0.28) 18%, rgba(12,15,13,0.24) 80%, rgba(12,15,13,0.7) 100%),
-    linear-gradient(90deg, rgba(12,15,13,0.65) 0%, rgba(12,15,13,0.48) 32%, rgba(12,15,13,0.34) 62%, rgba(12,15,13,0.3) 100%);
-}
-
 .roadmap {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);

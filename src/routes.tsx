@@ -5,6 +5,7 @@ import { Root } from "@/components/layout/Root";
 import { Seo } from "@/components/layout/Seo";
 import Home from "@/pages/Home";
 import Films from "@/pages/Films";
+import Services from "@/pages/Services";
 import Bio from "@/pages/Bio";
 
 const organizationJsonLd = {
@@ -54,6 +55,19 @@ export const routes: RouteRecord[] = [
               description="The films of FoxWing Productions: Return To Sender, Insomnia, Rooted Remedy, Ava, First Fan, Tarantino, Daddy-O, I'm Only Visiting and DELIVERY. Award-driven cinema produced in Toronto."
             />
             <Films />
+          </>
+        ),
+      },
+      {
+        path: "services",
+        element: (
+          <>
+            <Seo
+              path="/services"
+              title="Services | FoxWing Productions"
+              description="Full-service film production in Toronto: research, budgeting, locations & permits, casting, crew hiring, equipment, production management and logistics, one team from first myth to final picture."
+            />
+            <Services />
           </>
         ),
       },

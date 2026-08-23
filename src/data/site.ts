@@ -22,7 +22,7 @@ export interface NavLink {
 /** Home tracks its own sections with the scrollspy. */
 export const navLinks: NavLink[] = [
   { label: 'About', href: '/#about', section: 'about' },
-  { label: 'Services', href: '/#services', section: 'services' },
+  { label: 'Services', href: '/services' },
   { label: 'Work', href: '/#work', section: 'work' },
   { label: 'Gallery', href: '/#gallery', section: 'gallery' },
   { label: 'Talent', href: '/#team', section: 'team' },
@@ -31,7 +31,7 @@ export const navLinks: NavLink[] = [
 /** Inner pages swap in a shorter set led by Films, and mark their own entry. */
 export const innerNavLinks: NavLink[] = [
   { label: 'Films', href: '/filmography' },
-  { label: 'Services', href: '/#services' },
+  { label: 'Services', href: '/services' },
   { label: 'Gallery', href: '/#gallery' },
   { label: 'Talent', href: '/#team' },
 ];
@@ -39,7 +39,7 @@ export const innerNavLinks: NavLink[] = [
 export const footerLinks = {
   explore: [
     { label: 'About', href: '/#about' },
-    { label: 'Services', href: '/#services' },
+    { label: 'Services', href: '/services' },
     { label: 'Films', href: '/filmography' },
     { label: 'Talent', href: '/#team' },
   ],
