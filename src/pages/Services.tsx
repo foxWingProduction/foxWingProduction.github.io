@@ -65,7 +65,15 @@ export default function Services() {
 
   return (
     <Layout condensed variant="inner" activeLabel="Services">
-      <section className="subhero">
+      <section className="subhero subhero--media">
+        <div className="subhero__bg" aria-hidden="true">
+          <img
+            className="subhero__frame"
+            src="/images/studio/on-set.jpg"
+            alt=""
+          />
+          <span className="subhero__scrim" />
+        </div>
         <div className="container subhero__inner">
           <p className="eyebrow reveal in">What we do</p>
           <h1 className="subhero__title reveal in">

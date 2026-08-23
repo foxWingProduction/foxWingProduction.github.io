@@ -5,7 +5,7 @@ import { videos } from '@/data/site';
 
 export function About() {
   const ref = useRef<HTMLElement>(null);
-  useBackgroundVideo(ref, '.about__frame', videos.roadmap.youtubeId, videos.roadmap.start);
+  useBackgroundVideo(ref, '.about__frame', videos.roadmap.youtubeId, videos.roadmap.start, 0);
 
   return (
     <section className="section about-section" id="about" ref={ref}>

@@ -13,6 +13,10 @@ export function useBackgroundVideo(
   frameSelector: string,
   youtubeId: string,
   start: number,
+  /** Delay before the fade-in reveal, so the player can clear its own
+   *  start-up overlay first. Pass 0 for a section that should cut in
+   *  the instant the frame loads. */
+  readyDelay = 2200,
 ): void {
   useEffect(() => {
     const section = sectionRef.current;
@@ -23,8 +27,7 @@ export function useBackgroundVideo(
 
     let timer = 0;
     const onLoad = () => {
-      // Held back until the player is past its own start-up overlay.
-      timer = window.setTimeout(() => section.classList.add('video-ready'), 2200);
+      timer = window.setTimeout(() => section.classList.add('video-ready'), readyDelay);
     };
 
     const io = new IntersectionObserver(
@@ -48,5 +51,5 @@ export function useBackgroundVideo(
       frame.removeEventListener('load', onLoad);
       section.classList.remove('video-ready');
     };
-  }, [sectionRef, frameSelector, youtubeId, start]);
+  }, [sectionRef, frameSelector, youtubeId, start, readyDelay]);
 }

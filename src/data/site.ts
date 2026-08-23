@@ -53,6 +53,6 @@ export const footerLinks = {
 /** Background clips. Swapping a video means changing only these. */
 export const videos = {
   hero: { vimeoId: '1198577114', start: 68, quality: '1080p' },
-  roadmap: { youtubeId: 'yTUklOpcp6Q', start: 68 },
+  roadmap: { youtubeId: 'yTUklOpcp6Q', start: 30 },
   contact: { youtubeId: '1TsgF3FuEC0', start: 9 },
 } as const;
