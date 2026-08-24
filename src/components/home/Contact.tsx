@@ -5,7 +5,7 @@ import { useBackgroundVideo } from '@/hooks/useBackgroundVideo';
 
 export function Contact() {
   const ref = useRef<HTMLElement>(null);
-  useBackgroundVideo(ref, '.contact__frame', videos.contact.youtubeId, videos.contact.start);
+  useBackgroundVideo(ref, '.contact__frame', videos.contact.youtubeId, videos.contact.start, 2200, false);
 
   return (
     <section className="section contact-section" id="contact" ref={ref}>

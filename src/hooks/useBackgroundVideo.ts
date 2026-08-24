@@ -5,11 +5,11 @@ import { prefersReducedMotion } from './useMediaPrefs';
  * Muted YouTube loop behind a full-width section, loaded only when the section
  * nears the viewport so visitors who never scroll there pay nothing for it.
  *
- * Skipped on small screens by default: YouTube keeps its own centred touch
- * controls visible there no matter what the URL params say, so a
- * `desktopOnly: false` override just swaps a blank mobile background for a
- * visible play/pause/skip overlay. Give the section a poster image instead
- * (see About) rather than disabling this flag.
+ * Defaults to desktop-only: on first load YouTube can briefly show its own
+ * pre-play overlay (see readyDelay below) regardless of screen size, which
+ * reads worse on a small screen. Pass `desktopOnly: false` to play on mobile
+ * too - both About and Contact do, since a blank section is worse than that
+ * brief flash.
  */
 export function useBackgroundVideo(
   sectionRef: RefObject<HTMLElement | null>,
