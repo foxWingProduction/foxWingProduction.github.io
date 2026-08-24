@@ -56,7 +56,7 @@ export function FilmRecord({ film, hidden }: { film: Film; hidden: boolean }) {
       <div className="project__body">
         <div className="project__yearline">
           <span className="sep" />
-          {[film.year, ...film.genreLabels].join(' · ')}
+          {[film.year, ...film.genreLabels].filter(Boolean).join(' · ')}
         </div>
         <h2 className="project__name">{film.title}</h2>
         <p className="project__synopsis">{film.synopsis}</p>

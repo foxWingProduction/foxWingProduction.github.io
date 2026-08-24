@@ -10,6 +10,7 @@ const GENRES = [
   { key: 'all', label: 'All' },
   { key: 'film', label: 'Narrative' },
   { key: 'music', label: 'Music Video' },
+  { key: 'commercial', label: 'Commercial' },
 ];
 
 export default function Films() {

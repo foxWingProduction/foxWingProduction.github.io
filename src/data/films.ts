@@ -1,6 +1,10 @@
 import type { Film } from '@/types/content';
 
-/** The nine productions, newest first, in the order they appear on the films page. */
+/**
+ * The productions, in the order they appear on the films page. The first
+ * nine (newest first) carry a year; the rest are appended after them
+ * undated for now.
+ */
 export const films: Film[] = [
   {
     "id": "project1",
@@ -504,6 +508,605 @@ export const films: Film[] = [
       {
         "src": "/images/films/delivery/still-4.png",
         "scope": false
+      }
+    ]
+  },
+  {
+    "id": "project10",
+    "slug": "ccmw-campaign",
+    "title": "CCMW Campaign",
+    "year": "",
+    "genreLabels": [
+      "Commercial"
+    ],
+    "genres": [
+      "commercial"
+    ],
+    "synopsis": "A three-part commercial campaign for the Canadian Council of Muslim Women (CCMW).",
+    "credits": [
+      {
+        "role": "Client",
+        "people": "Canadian Council of Muslim Women (CCMW)"
+      },
+      {
+        "role": "Director / Writer",
+        "people": "Hassan Babar"
+      },
+      {
+        "role": "Production Company",
+        "people": "FoxWing Productions"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Khai Prendergast"
+      },
+      {
+        "role": "Editor",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Colorist",
+        "people": "Khai Prendergast"
+      },
+      {
+        "role": "Starring",
+        "people": "Sabreen El Awad · Radiyah Chowdhury · Samina Khaliq"
+      },
+      {
+        "role": "Special Thanks",
+        "people": "Emma Almeida"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/ccmw-campaign/still-1.jpg",
+        "scope": false
+      },
+      {
+        "src": "/images/films/ccmw-campaign/still-2.jpg",
+        "scope": false
+      }
+    ]
+  },
+  {
+    "id": "project11",
+    "slug": "35-visualizers",
+    "title": "3!5 Visualizers",
+    "year": "",
+    "genreLabels": [
+      "Music Video"
+    ],
+    "genres": [
+      "music"
+    ],
+    "synopsis": "A series of visualizers for Yansi Alexavier's 3!5 album.",
+    "credits": [
+      {
+        "role": "Production Company",
+        "people": "FoxWing Productions"
+      },
+      {
+        "role": "Director",
+        "people": "Jibreel Moore"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Stylist",
+        "people": "Sharifa Abu"
+      },
+      {
+        "role": "Starring",
+        "people": "Shirley Jackson"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/35-visualizers/still-1.jpg",
+        "scope": false
+      },
+      {
+        "src": "/images/films/35-visualizers/still-2.jpg",
+        "scope": false
+      }
+    ]
+  },
+  {
+    "id": "project12",
+    "slug": "like-a-man",
+    "title": "Like A Man",
+    "year": "",
+    "genreLabels": [
+      "Music Video"
+    ],
+    "genres": [
+      "music"
+    ],
+    "synopsis": "barahmé's music video for \"Like A Man.\"",
+    "credits": [
+      {
+        "role": "Song",
+        "people": "Like A Man"
+      },
+      {
+        "role": "Artist",
+        "people": "barahmé"
+      },
+      {
+        "role": "Production Company",
+        "people": "FoxWing Productions"
+      },
+      {
+        "role": "Director",
+        "people": "Rosa Riad"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Issa Shah"
+      },
+      {
+        "role": "1st AC",
+        "people": "Alexander Kuepfer"
+      },
+      {
+        "role": "Gaffer",
+        "people": "Eesah Quick"
+      },
+      {
+        "role": "Key Grip",
+        "people": "Travis Wallace"
+      },
+      {
+        "role": "Grip",
+        "people": "Liam Schmid"
+      },
+      {
+        "role": "Production Designer",
+        "people": "Bahar Goel"
+      },
+      {
+        "role": "Set Dresser",
+        "people": "Josette Joseph"
+      },
+      {
+        "role": "Art PA",
+        "people": "Elaf Khan"
+      },
+      {
+        "role": "Editor / Colorist",
+        "people": "Zeyad Abouzeid"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/like-a-man/still-1.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/like-a-man/still-2.jpg",
+        "scope": true
+      }
+    ]
+  },
+  {
+    "id": "project13",
+    "slug": "powerpoint",
+    "title": "POWERPOINT",
+    "year": "",
+    "genreLabels": [
+      "Music Video"
+    ],
+    "genres": [
+      "music"
+    ],
+    "synopsis": "Danny Lion's music video for \"POWERPOINT.\"",
+    "credits": [
+      {
+        "role": "Song",
+        "people": "POWERPOINT"
+      },
+      {
+        "role": "Artist",
+        "people": "Danny Lion"
+      },
+      {
+        "role": "Production Company",
+        "people": "FoxWing Productions in association with Studio Tao"
+      },
+      {
+        "role": "Director",
+        "people": "Danny Lion"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "1st AD",
+        "people": "Elizabeth Mai"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Hugo Hum"
+      },
+      {
+        "role": "1st AC",
+        "people": "Josh Laxamana"
+      },
+      {
+        "role": "G&E",
+        "people": "Rafael Zoto"
+      },
+      {
+        "role": "PA",
+        "people": "Loc Nguyen"
+      },
+      {
+        "role": "Editor",
+        "people": "Danny Lion"
+      },
+      {
+        "role": "Colorist",
+        "people": "Hugo Hum"
+      },
+      {
+        "role": "Boss",
+        "people": "johnwayn"
+      },
+      {
+        "role": "Extras",
+        "people": "Abdoul Djama · Yusuf Mahboobi · Kev Yu · Al-Raffay Mirza · Loc Nguyen"
+      },
+      {
+        "role": "Special Thanks",
+        "people": "Milkcrate Collective · Issa Shah"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/powerpoint/still-1.jpg",
+        "scope": false
+      },
+      {
+        "src": "/images/films/powerpoint/still-2.jpg",
+        "scope": false
+      }
+    ]
+  },
+  {
+    "id": "project14",
+    "slug": "thaangale",
+    "title": "THAANGALE",
+    "year": "",
+    "genreLabels": [
+      "Music Video"
+    ],
+    "genres": [
+      "music"
+    ],
+    "synopsis": "Supaveen's music video for \"THAANGALE.\"",
+    "credits": [
+      {
+        "role": "Song",
+        "people": "THAANGALE"
+      },
+      {
+        "role": "Artist",
+        "people": "Supaveen"
+      },
+      {
+        "role": "Production Company",
+        "people": "startBAD Studios in association with FoxWing Productions"
+      },
+      {
+        "role": "Director",
+        "people": "Arshad Mohamed"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Jordan Mariampillai"
+      },
+      {
+        "role": "1st AC",
+        "people": "Karn Litah"
+      },
+      {
+        "role": "Gaffer",
+        "people": "Pablo Balboa"
+      },
+      {
+        "role": "Key Grip",
+        "people": "Nick Molina"
+      },
+      {
+        "role": "Production Designer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Art PA",
+        "people": "Mustafa Cowan"
+      },
+      {
+        "role": "1st AD",
+        "people": "Chanjay Nimalraj"
+      },
+      {
+        "role": "BTS/PA",
+        "people": "Ferdi Orlain · Gebel Ceesay"
+      },
+      {
+        "role": "PA",
+        "people": "Aldo Pastore"
+      },
+      {
+        "role": "Choreographer",
+        "people": "Abinaya Bavananthan"
+      },
+      {
+        "role": "Editor / Colorist",
+        "people": "Arshad Mohamed"
+      },
+      {
+        "role": "Starring",
+        "people": "Supaveen · Erica Fei Wang (The One Who Got Away) · Dan Lim (Triad Boss) · Cam Fung (Rival Triad Boss) · Wai Hing Wong (Triad Elder) · Daniel Mok (Young Triad) · Miles Jun (Triad Driver)"
+      },
+      {
+        "role": "Special Thanks",
+        "people": "Perfect Chinese Restaurant · Issa Shah · Harrie Pirabaharan · Johnavan Lakshman Thomas · The Sonder Room · Canada Film Equipment"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/thaangale/still-1.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/thaangale/still-2.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/thaangale/still-3.jpg",
+        "scope": true
+      }
+    ]
+  },
+  {
+    "id": "project15",
+    "slug": "body-of-work",
+    "title": "Body of Work",
+    "year": "",
+    "genreLabels": [
+      "Narrative"
+    ],
+    "genres": [
+      "film"
+    ],
+    "synopsis": "A psychological thriller short film.",
+    "credits": [
+      {
+        "role": "Production Company",
+        "people": "FoxWing Productions in association with Monster Under The Bed"
+      },
+      {
+        "role": "Directors / Writers",
+        "people": "Andrea D'Amario · Luca Cianfarani"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Pablo Balboa"
+      },
+      {
+        "role": "1st AC",
+        "people": "Roberto Lambraño"
+      },
+      {
+        "role": "Gaffer",
+        "people": "Niklas Metcalfe"
+      },
+      {
+        "role": "Key Grip",
+        "people": "Rafael Zoto"
+      },
+      {
+        "role": "Swing",
+        "people": "Alan R. Garcia Ortiz"
+      },
+      {
+        "role": "Sound Mixer / Boom Op",
+        "people": "Christian Sell"
+      },
+      {
+        "role": "Production Designer",
+        "people": "Wynne McGee-Harris"
+      },
+      {
+        "role": "Set Dresser",
+        "people": "Josh Talveski"
+      },
+      {
+        "role": "Special Effects Artist",
+        "people": "Jay Bezouska"
+      },
+      {
+        "role": "Makeup Artist",
+        "people": "Kathleene Gillis-Baker"
+      },
+      {
+        "role": "Catering",
+        "people": "H.Miguel"
+      },
+      {
+        "role": "Starring",
+        "people": "Nick Patel (The Painter) · Callie Hernandez (Art Curator) · Giacomo Piccolo (Art Buyer) · Ramez Malick (The Captive) · Zoreb Malick (Art Gallery Attendee) · Zaayed Malick (Art Gallery Attendee) · Olivia Laufer (Art Gallery Attendee)"
+      },
+      {
+        "role": "Special Thanks",
+        "people": "Jason D'Souza"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/body-of-work/still-1.jpg",
+        "scope": false
+      },
+      {
+        "src": "/images/films/body-of-work/still-2.jpg",
+        "scope": true
+      }
+    ]
+  },
+  {
+    "id": "project16",
+    "slug": "the-barn",
+    "title": "The Barn",
+    "year": "",
+    "genreLabels": [
+      "Narrative"
+    ],
+    "genres": [
+      "film"
+    ],
+    "synopsis": "A psychological sci-fi short film.",
+    "credits": [
+      {
+        "role": "Production Company",
+        "people": "FoxWing Productions"
+      },
+      {
+        "role": "Executive Producer",
+        "people": "Evil Empire Studios"
+      },
+      {
+        "role": "Director / Writer",
+        "people": "Ethan Gardner"
+      },
+      {
+        "role": "Producer",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Co-Producer",
+        "people": "Rosa Riad"
+      },
+      {
+        "role": "1st AD",
+        "people": "Tessa Ruryk"
+      },
+      {
+        "role": "Script Supervisor",
+        "people": "Urooj Khan"
+      },
+      {
+        "role": "Director of Photography",
+        "people": "Sofia Abud"
+      },
+      {
+        "role": "1st AC",
+        "people": "Laura King"
+      },
+      {
+        "role": "2nd AC",
+        "people": "Liam Fowler · Gebel Ceesay"
+      },
+      {
+        "role": "BTS Camera Operator",
+        "people": "Gebel Ceesay"
+      },
+      {
+        "role": "Gaffer",
+        "people": "Kyle Yu"
+      },
+      {
+        "role": "Key Grip",
+        "people": "Johanna Abed"
+      },
+      {
+        "role": "Sound Mixer",
+        "people": "Kieran Muller"
+      },
+      {
+        "role": "Production Designer",
+        "people": "Pixie Juni"
+      },
+      {
+        "role": "Set Dresser",
+        "people": "Sierra Hajee"
+      },
+      {
+        "role": "Art PA",
+        "people": "Katie Krolak"
+      },
+      {
+        "role": "Wardrobe Designer",
+        "people": "Sophia Pobee"
+      },
+      {
+        "role": "Hair / Makeup",
+        "people": "Sophia Pobee"
+      },
+      {
+        "role": "DIT",
+        "people": "Al-Raffay Mirza"
+      },
+      {
+        "role": "Picture Editor",
+        "people": "Dana Ryan"
+      },
+      {
+        "role": "Sound Designer / Mixer",
+        "people": "Dana Ryan"
+      },
+      {
+        "role": "Composer",
+        "people": "Sofia Abud"
+      },
+      {
+        "role": "Catering",
+        "people": "Wendi Gardner"
+      },
+      {
+        "role": "Starring",
+        "people": "Sam Biskey (Marcus) · Mooney Shepard (Dr. Lowanburg) · Johnny Thirakul (Moose) · Xander Sherman (Gerry) · Carmen Durand (Lola)"
+      },
+      {
+        "role": "Special Thanks",
+        "people": "Canada Film Equipment · Bell Fibe TV · Issa Shah"
+      }
+    ],
+    "stills": [
+      {
+        "src": "/images/films/the-barn/still-1.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/the-barn/still-2.jpg",
+        "scope": true
+      },
+      {
+        "src": "/images/films/the-barn/still-3.jpg",
+        "scope": true
       }
     ]
   }
